@@ -1,0 +1,3 @@
+10.2.0-10.2.0
+            VER1.6.0HEAD_ONLY./URLhttps://github.com/onnx/onnx/releases/download/v1.6.0/onnx-1.6.0.tar.gzMD5512f2779d6215d4a36f366b6b9acdf1e - - 
+            ----

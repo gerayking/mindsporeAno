@@ -1,0 +1,10 @@
+/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/_build/CMakeFiles/install/strip.dir
+/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/_build/CMakeFiles/install/local.dir
+/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/_build/CMakeFiles/install.dir
+/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/_build/CMakeFiles/list_install_components.dir
+/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/_build/CMakeFiles/rebuild_cache.dir
+/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/_build/CMakeFiles/edit_cache.dir
+/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/_build/CMakeFiles/protoc.dir
+/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/_build/CMakeFiles/libprotobuf.dir
+/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/_build/CMakeFiles/libprotoc.dir
+/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/_build/CMakeFiles/libprotobuf-lite.dir

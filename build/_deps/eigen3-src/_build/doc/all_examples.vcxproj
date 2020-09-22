@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{53846F21-18C0-3DA3-9C37-9486C0F2293D}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>all_examples</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc;D:\Mindspore\mindspore-master\build\_deps\eigen3-src;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc;D:\Mindspore\mindspore-master\build\_deps\eigen3-src;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc;D:\Mindspore\mindspore-master\build\_deps\eigen3-src;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc;D:\Mindspore\mindspore-master\build\_deps\eigen3-src;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Mindspore/mindspore-master/build/_deps/eigen3-src/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/Mindspore/mindspore-master/build/_deps/eigen3-src -BD:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build --check-stamp-file D:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\Doxyfile.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_footer.html.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_header.html.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_layout.xml.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Mindspore/mindspore-master/build/_deps/eigen3-src/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/Mindspore/mindspore-master/build/_deps/eigen3-src -BD:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build --check-stamp-file D:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\Doxyfile.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_footer.html.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_header.html.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_layout.xml.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Mindspore/mindspore-master/build/_deps/eigen3-src/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/Mindspore/mindspore-master/build/_deps/eigen3-src -BD:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build --check-stamp-file D:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\Doxyfile.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_footer.html.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_header.html.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_layout.xml.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Mindspore/mindspore-master/build/_deps/eigen3-src/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/Mindspore/mindspore-master/build/_deps/eigen3-src -BD:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build --check-stamp-file D:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\Doxyfile.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_footer.html.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_header.html.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_layout.xml.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\ZERO_CHECK.vcxproj">
+      <Project>{380EE55D-FFA2-36E2-8215-F1DBCB56DFD9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\CustomizingEigen_Inheritance.vcxproj">
+      <Project>{244F5E9B-A878-3F72-87DC-99282ED4442C}</Project>
+      <Name>CustomizingEigen_Inheritance</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Cwise_erf.vcxproj">
+      <Project>{1D3E7624-40CE-3829-86D1-F1E21DC7B120}</Project>
+      <Name>Cwise_erf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Cwise_erfc.vcxproj">
+      <Project>{B53DF178-F486-3ACB-889B-4A2EBCBF31D1}</Project>
+      <Name>Cwise_erfc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Cwise_lgamma.vcxproj">
+      <Project>{BEF2C386-5760-3846-98B8-5BE4689FD5A9}</Project>
+      <Name>Cwise_lgamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\DenseBase_middleCols_int.vcxproj">
+      <Project>{C22387D0-EBB3-39D7-835B-99556ACD0925}</Project>
+      <Name>DenseBase_middleCols_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\DenseBase_middleRows_int.vcxproj">
+      <Project>{15343413-6AD2-3031-9971-243D93D0A736}</Project>
+      <Name>DenseBase_middleRows_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\DenseBase_template_int_middleCols.vcxproj">
+      <Project>{79E4FB16-EEF4-3B48-89D9-BAAC94599961}</Project>
+      <Name>DenseBase_template_int_middleCols</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\DenseBase_template_int_middleRows.vcxproj">
+      <Project>{610F1024-07F2-3EB8-9B17-40760A2C6203}</Project>
+      <Name>DenseBase_template_int_middleRows</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\QuickStart_example.vcxproj">
+      <Project>{E944AF94-364D-3B79-A08A-88C451BBF16B}</Project>
+      <Name>QuickStart_example</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\QuickStart_example2_dynamic.vcxproj">
+      <Project>{58209F4D-6F72-34B5-8F8C-EA4ED98E8A31}</Project>
+      <Name>QuickStart_example2_dynamic</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\QuickStart_example2_fixed.vcxproj">
+      <Project>{E0927106-D8A3-3E3B-BA58-725D8203E19F}</Project>
+      <Name>QuickStart_example2_fixed</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TemplateKeyword_flexible.vcxproj">
+      <Project>{F56F08D9-7D2A-3389-8071-950B48D7F5BC}</Project>
+      <Name>TemplateKeyword_flexible</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TemplateKeyword_simple.vcxproj">
+      <Project>{F8279766-E568-3CFA-AE63-910B6B3A993B}</Project>
+      <Name>TemplateKeyword_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialInplaceLU.vcxproj">
+      <Project>{26C3FCE1-DBFE-3B29-A69E-BDADE1C92230}</Project>
+      <Name>TutorialInplaceLU</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialLinAlgComputeTwice.vcxproj">
+      <Project>{EEB3A227-CD1B-3FC4-9FE7-0F81534232DA}</Project>
+      <Name>TutorialLinAlgComputeTwice</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialLinAlgExComputeSolveError.vcxproj">
+      <Project>{23DE00E4-13C6-317C-B50D-9A3929C7C9F5}</Project>
+      <Name>TutorialLinAlgExComputeSolveError</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialLinAlgExSolveColPivHouseholderQR.vcxproj">
+      <Project>{CC632BA8-CBE0-37D7-A87E-7E9BA9AE0F3A}</Project>
+      <Name>TutorialLinAlgExSolveColPivHouseholderQR</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialLinAlgExSolveLDLT.vcxproj">
+      <Project>{FC8E6358-FC32-3FFD-956C-29BE5C279CF2}</Project>
+      <Name>TutorialLinAlgExSolveLDLT</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialLinAlgInverseDeterminant.vcxproj">
+      <Project>{4B31CDC3-CDAD-375A-B26E-AB4BCAD7F3DE}</Project>
+      <Name>TutorialLinAlgInverseDeterminant</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialLinAlgRankRevealing.vcxproj">
+      <Project>{52E50041-26DA-3F39-A939-F8A1EE65F33F}</Project>
+      <Name>TutorialLinAlgRankRevealing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialLinAlgSVDSolve.vcxproj">
+      <Project>{82453661-11A8-38B2-BB16-6688A27837C4}</Project>
+      <Name>TutorialLinAlgSVDSolve</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialLinAlgSelfAdjointEigenSolver.vcxproj">
+      <Project>{D2C741EA-7A07-3324-8F72-AF7E63B79D5D}</Project>
+      <Name>TutorialLinAlgSelfAdjointEigenSolver</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialLinAlgSetThreshold.vcxproj">
+      <Project>{AB19F7A1-F535-37EF-A482-4B745E213C02}</Project>
+      <Name>TutorialLinAlgSetThreshold</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ArrayClass_accessors.vcxproj">
+      <Project>{201E0823-84A7-3B60-B08E-2B99F2070E7C}</Project>
+      <Name>Tutorial_ArrayClass_accessors</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ArrayClass_addition.vcxproj">
+      <Project>{58996F48-CEA1-368E-B955-DD18DC1EBF64}</Project>
+      <Name>Tutorial_ArrayClass_addition</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ArrayClass_cwise_other.vcxproj">
+      <Project>{3C858FA1-19AC-3C88-A427-A68F81598AFB}</Project>
+      <Name>Tutorial_ArrayClass_cwise_other</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ArrayClass_interop.vcxproj">
+      <Project>{5469347D-A0A4-31DC-915B-D2A05009B601}</Project>
+      <Name>Tutorial_ArrayClass_interop</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ArrayClass_interop_matrix.vcxproj">
+      <Project>{F4E666AB-E3F6-3901-9C7F-1126145C3004}</Project>
+      <Name>Tutorial_ArrayClass_interop_matrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ArrayClass_mult.vcxproj">
+      <Project>{855954C1-0F82-3FC1-B2CF-E340153DD148}</Project>
+      <Name>Tutorial_ArrayClass_mult</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_BlockOperations_block_assignment.vcxproj">
+      <Project>{A964C58F-76A4-3A08-AD15-1A50B4EE1D25}</Project>
+      <Name>Tutorial_BlockOperations_block_assignment</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_BlockOperations_colrow.vcxproj">
+      <Project>{85C8D77A-1F48-3005-817C-694E4A6BD5A6}</Project>
+      <Name>Tutorial_BlockOperations_colrow</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_BlockOperations_corner.vcxproj">
+      <Project>{386065D0-9C08-3E74-86EE-7A5E1157BDD6}</Project>
+      <Name>Tutorial_BlockOperations_corner</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_BlockOperations_print_block.vcxproj">
+      <Project>{8B7FA26C-4E8F-3F21-A9D7-B8C728DD5A6E}</Project>
+      <Name>Tutorial_BlockOperations_print_block</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_BlockOperations_vector.vcxproj">
+      <Project>{F7A3595C-3AC1-3843-86E1-D47E7185E7D7}</Project>
+      <Name>Tutorial_BlockOperations_vector</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_PartialLU_solve.vcxproj">
+      <Project>{6F5A7F42-2B2E-3BC9-B477-634DD3A95601}</Project>
+      <Name>Tutorial_PartialLU_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_1nn.vcxproj">
+      <Project>{020A12A3-A4A9-3940-AC6D-6D317187AF0B}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_1nn</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple.vcxproj">
+      <Project>{5EC671E7-F282-3951-A597-730666994FCA}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple_rowwise.vcxproj">
+      <Project>{48027EA1-B89C-3FD0-9656-2C7599C8500B}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple_rowwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_colwise.vcxproj">
+      <Project>{18675B1A-B45A-3530-832F-C1CE442288A2}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_colwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_maxnorm.vcxproj">
+      <Project>{3B7910EB-4C8A-39FE-A2BB-76EE51EB1833}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_maxnorm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_bool.vcxproj">
+      <Project>{AE5F1185-FE09-3C6A-951D-458C82E66CBE}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_bool</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_norm.vcxproj">
+      <Project>{EC7D077F-F529-3E96-933D-F86A1FED8E51}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_norm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_operatornorm.vcxproj">
+      <Project>{9A6ADB27-2204-3B53-86E3-D088952BD8D1}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_operatornorm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_rowwise.vcxproj">
+      <Project>{A4815C0F-0D0D-3590-989D-911E78CC9E4F}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_rowwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_visitors.vcxproj">
+      <Project>{6B75DEBF-4EEF-3E34-98C0-CDEF79F71830}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_visitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_simple_example_dynamic_size.vcxproj">
+      <Project>{11217F8F-7CA9-3547-B2B4-EC621984CC60}</Project>
+      <Name>Tutorial_simple_example_dynamic_size</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_simple_example_fixed_size.vcxproj">
+      <Project>{9559C60C-0FB0-33DC-8819-7319488C3E32}</Project>
+      <Name>Tutorial_simple_example_fixed_size</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\class_Block.vcxproj">
+      <Project>{0BA9172E-A33C-38F6-861D-DDAA74800BC7}</Project>
+      <Name>class_Block</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\class_CwiseBinaryOp.vcxproj">
+      <Project>{B38B37BF-F07F-3F8A-9EB2-FEA3DBFCA5D9}</Project>
+      <Name>class_CwiseBinaryOp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\class_CwiseUnaryOp.vcxproj">
+      <Project>{9993CE90-F6B4-30A7-A88E-D1656C34F950}</Project>
+      <Name>class_CwiseUnaryOp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\class_CwiseUnaryOp_ptrfun.vcxproj">
+      <Project>{CEBB9C33-2538-3EFB-87ED-80F104D5DB1C}</Project>
+      <Name>class_CwiseUnaryOp_ptrfun</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\class_FixedBlock.vcxproj">
+      <Project>{BCBA1A31-0C26-3B73-BE6D-79EB580E86A8}</Project>
+      <Name>class_FixedBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\class_FixedVectorBlock.vcxproj">
+      <Project>{5ED72205-620F-3589-A065-E4947D35C0FD}</Project>
+      <Name>class_FixedVectorBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\class_VectorBlock.vcxproj">
+      <Project>{56E7A132-C223-3104-A4FE-9699A6081724}</Project>
+      <Name>class_VectorBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\function_taking_eigenbase.vcxproj">
+      <Project>{2752493B-6A57-33F9-92A8-BE2D0DC4A811}</Project>
+      <Name>function_taking_eigenbase</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\function_taking_ref.vcxproj">
+      <Project>{FC9F31D4-B5CD-3302-A31B-DF8926D18012}</Project>
+      <Name>function_taking_ref</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\make_circulant.vcxproj">
+      <Project>{9CC8EA4E-1554-3AE4-A713-736A68879FE7}</Project>
+      <Name>make_circulant</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\make_circulant2.vcxproj">
+      <Project>{16CF0947-6D47-30BA-8247-52C9E1F2CE20}</Project>
+      <Name>make_circulant2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\matrixfree_cg.vcxproj">
+      <Project>{96BFA427-9CCC-3480-B0F8-E65BB326AF29}</Project>
+      <Name>matrixfree_cg</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\nullary_indexing.vcxproj">
+      <Project>{7579F999-6080-3F26-BA1D-1AA1D39E4C49}</Project>
+      <Name>nullary_indexing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\tut_arithmetic_add_sub.vcxproj">
+      <Project>{BFC968A0-021C-3A04-9D08-16CE974C2205}</Project>
+      <Name>tut_arithmetic_add_sub</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\tut_arithmetic_dot_cross.vcxproj">
+      <Project>{CC397538-9FD8-34E1-9643-7E293D100D03}</Project>
+      <Name>tut_arithmetic_dot_cross</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\tut_arithmetic_matrix_mul.vcxproj">
+      <Project>{5129FC1B-F25E-3659-BD96-005ABF728335}</Project>
+      <Name>tut_arithmetic_matrix_mul</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\tut_arithmetic_redux_basic.vcxproj">
+      <Project>{44ACFF39-269F-33A0-AC00-941C231E1DC6}</Project>
+      <Name>tut_arithmetic_redux_basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\tut_arithmetic_scalar_mul_div.vcxproj">
+      <Project>{4C4979F3-4D38-3F8C-9A20-0B1FC9E73D75}</Project>
+      <Name>tut_arithmetic_scalar_mul_div</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\tut_matrix_coefficient_accessors.vcxproj">
+      <Project>{8BE67632-D139-3849-BDEF-28E39D3F260E}</Project>
+      <Name>tut_matrix_coefficient_accessors</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\tut_matrix_resize.vcxproj">
+      <Project>{63970192-73D6-328B-86E5-2BC1A2E65ADE}</Project>
+      <Name>tut_matrix_resize</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\tut_matrix_resize_fixed_size.vcxproj">
+      <Project>{69CF051E-ABA0-3A03-B036-0EF56818BB41}</Project>
+      <Name>tut_matrix_resize_fixed_size</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

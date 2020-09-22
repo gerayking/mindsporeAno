@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\mindspore",
+    "\\mindspore\\ccsrc",
+    "\\mindspore\\ccsrc\\pipeline",
+    "\\mindspore\\ccsrc\\pipeline\\jit"
+  ],
+  "SelectedNode": "\\mindspore\\ccsrc\\pipeline\\jit\\pipeline_ge.h",
+  "PreviewInSolutionExplorer": false
+}

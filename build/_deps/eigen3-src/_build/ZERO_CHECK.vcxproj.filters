@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\CMakeFiles\5d182927b689b83667b5fdc37c71f0b2\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{35264FF5-3EA8-3CB9-88E4-3DE80E18B1BA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

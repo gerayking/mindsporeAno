@@ -1,0 +1,14 @@
+# Target labels
+ nlohmann_json-populate
+# Source files and their labels
+D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/nlohmann_json-subbuild/CMakeFiles/nlohmann_json-populate
+D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/nlohmann_json-subbuild/CMakeFiles/nlohmann_json-populate.rule
+D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/nlohmann_json-subbuild/CMakeFiles/nlohmann_json-populate-complete.rule
+D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp/nlohmann_json-populate-install.rule
+D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp/nlohmann_json-populate-mkdir.rule
+D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp/nlohmann_json-populate-download.rule
+D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp/nlohmann_json-populate-update.rule
+D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp/nlohmann_json-populate-patch.rule
+D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp/nlohmann_json-populate-configure.rule
+D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp/nlohmann_json-populate-build.rule
+D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp/nlohmann_json-populate-test.rule

@@ -1,0 +1,14 @@
+# Target labels
+ ms_onnx-populate
+# Source files and their labels
+/home/geray/mindspore-master/cmake-build-debug/_deps/ms_onnx-subbuild/CMakeFiles/ms_onnx-populate
+/home/geray/mindspore-master/cmake-build-debug/_deps/ms_onnx-subbuild/CMakeFiles/ms_onnx-populate.rule
+/home/geray/mindspore-master/cmake-build-debug/_deps/ms_onnx-subbuild/CMakeFiles/ms_onnx-populate-complete.rule
+/home/geray/mindspore-master/cmake-build-debug/_deps/ms_onnx-subbuild/ms_onnx-populate-prefix/src/ms_onnx-populate-stamp/ms_onnx-populate-install.rule
+/home/geray/mindspore-master/cmake-build-debug/_deps/ms_onnx-subbuild/ms_onnx-populate-prefix/src/ms_onnx-populate-stamp/ms_onnx-populate-mkdir.rule
+/home/geray/mindspore-master/cmake-build-debug/_deps/ms_onnx-subbuild/ms_onnx-populate-prefix/src/ms_onnx-populate-stamp/ms_onnx-populate-download.rule
+/home/geray/mindspore-master/cmake-build-debug/_deps/ms_onnx-subbuild/ms_onnx-populate-prefix/src/ms_onnx-populate-stamp/ms_onnx-populate-update.rule
+/home/geray/mindspore-master/cmake-build-debug/_deps/ms_onnx-subbuild/ms_onnx-populate-prefix/src/ms_onnx-populate-stamp/ms_onnx-populate-patch.rule
+/home/geray/mindspore-master/cmake-build-debug/_deps/ms_onnx-subbuild/ms_onnx-populate-prefix/src/ms_onnx-populate-stamp/ms_onnx-populate-configure.rule
+/home/geray/mindspore-master/cmake-build-debug/_deps/ms_onnx-subbuild/ms_onnx-populate-prefix/src/ms_onnx-populate-stamp/ms_onnx-populate-build.rule
+/home/geray/mindspore-master/cmake-build-debug/_deps/ms_onnx-subbuild/ms_onnx-populate-prefix/src/ms_onnx-populate-stamp/ms_onnx-populate-test.rule

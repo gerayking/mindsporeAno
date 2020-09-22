@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -D_FORTIFY_SOURCE=2 -D_GLIBCXX_USE_CXX11_ABI=0 -O2 -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o   -L/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/_build/googlemock/gtest/src 

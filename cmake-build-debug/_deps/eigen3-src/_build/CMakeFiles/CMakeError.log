@@ -1,0 +1,106 @@
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wshorten64to32 failed with the following output:
+Change Dir: /home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_86ba3/fast && /usr/bin/make  -f CMakeFiles/cmTC_86ba3.dir/build.make CMakeFiles/cmTC_86ba3.dir/build
+make[1]: Entering directory '/home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_86ba3.dir/src.cxx.o
+/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -DCOMPILER_SUPPORT_Wshorten64to32 -Werror   -Wshorten-64-to-32 -o CMakeFiles/cmTC_86ba3.dir/src.cxx.o -c /home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-Wshorten-64-to-32'
+make[1]: *** [CMakeFiles/cmTC_86ba3.dir/build.make:86: CMakeFiles/cmTC_86ba3.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:141: cmTC_86ba3/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wenumconversion failed with the following output:
+Change Dir: /home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cd355/fast && /usr/bin/make  -f CMakeFiles/cmTC_cd355.dir/build.make CMakeFiles/cmTC_cd355.dir/build
+make[1]: Entering directory '/home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cd355.dir/src.cxx.o
+/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -DCOMPILER_SUPPORT_Wenumconversion -Werror   -Wenum-conversion -o CMakeFiles/cmTC_cd355.dir/src.cxx.o -c /home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: error: command-line option '-Wenum-conversion' is valid for C/ObjC but not for C++ [-Werror]
+cc1plus: all warnings being treated as errors
+make[1]: *** [CMakeFiles/cmTC_cd355.dir/build.make:86: CMakeFiles/cmTC_cd355.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:141: cmTC_cd355/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wcpp11extensions failed with the following output:
+Change Dir: /home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_17794/fast && /usr/bin/make  -f CMakeFiles/cmTC_17794.dir/build.make CMakeFiles/cmTC_17794.dir/build
+make[1]: Entering directory '/home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_17794.dir/src.cxx.o
+/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -DCOMPILER_SUPPORT_Wcpp11extensions -Werror   -Wc++11-extensions -o CMakeFiles/cmTC_17794.dir/src.cxx.o -c /home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-Wc++11-extensions'; did you mean '-fms-extensions'?
+make[1]: *** [CMakeFiles/cmTC_17794.dir/build.make:86: CMakeFiles/cmTC_17794.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:141: cmTC_17794/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd981 failed with the following output:
+Change Dir: /home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a714c/fast && /usr/bin/make  -f CMakeFiles/cmTC_a714c.dir/build.make CMakeFiles/cmTC_a714c.dir/build
+make[1]: Entering directory '/home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a714c.dir/src.cxx.o
+/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd981 -Werror   -wd981 -o CMakeFiles/cmTC_a714c.dir/src.cxx.o -c /home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-wd981'
+make[1]: *** [CMakeFiles/cmTC_a714c.dir/build.make:86: CMakeFiles/cmTC_a714c.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:141: cmTC_a714c/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd2304 failed with the following output:
+Change Dir: /home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_28fc7/fast && /usr/bin/make  -f CMakeFiles/cmTC_28fc7.dir/build.make CMakeFiles/cmTC_28fc7.dir/build
+make[1]: Entering directory '/home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_28fc7.dir/src.cxx.o
+/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd2304 -Werror   -wd2304 -o CMakeFiles/cmTC_28fc7.dir/src.cxx.o -c /home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-wd2304'
+make[1]: *** [CMakeFiles/cmTC_28fc7.dir/build.make:86: CMakeFiles/cmTC_28fc7.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:141: cmTC_28fc7/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_STRICTANSI failed with the following output:
+Change Dir: /home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_64a4a/fast && /usr/bin/make  -f CMakeFiles/cmTC_64a4a.dir/build.make CMakeFiles/cmTC_64a4a.dir/build
+make[1]: Entering directory '/home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_64a4a.dir/src.cxx.o
+/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_STRICTANSI -Werror   -strict-ansi -o CMakeFiles/cmTC_64a4a.dir/src.cxx.o -c /home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-strict-ansi'; did you mean '-fstrict-enums'?
+make[1]: *** [CMakeFiles/cmTC_64a4a.dir/build.make:86: CMakeFiles/cmTC_64a4a.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:141: cmTC_64a4a/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Qunusedarguments failed with the following output:
+Change Dir: /home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_44aef/fast && /usr/bin/make  -f CMakeFiles/cmTC_44aef.dir/build.make CMakeFiles/cmTC_44aef.dir/build
+make[1]: Entering directory '/home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_44aef.dir/src.cxx.o
+/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_Qunusedarguments -Werror   -Qunused-arguments -o CMakeFiles/cmTC_44aef.dir/src.cxx.o -c /home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-Qunused-arguments'
+make[1]: *** [CMakeFiles/cmTC_44aef.dir/build.make:86: CMakeFiles/cmTC_44aef.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/geray/mindspore-master/cmake-build-debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:141: cmTC_44aef/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }

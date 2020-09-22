@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://github.com/google/flatbuffers/archive/v1.11.0.tar.gz'
+tag='MD5=02c64880acb89dbd57eebacfd67200d8'

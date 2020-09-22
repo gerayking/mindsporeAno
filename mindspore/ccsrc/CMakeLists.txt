@@ -1,0 +1,308 @@
+## common setting
+include_directories(${CMAKE_SOURCE_DIR}/mindspore/core)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+include_directories(${CMAKE_BINARY_DIR})
+link_directories(${CMAKE_SOURCE_DIR}/build/mindspore/graphengine)
+
+if (CMAKE_SYSTEM_NAME MATCHES "Windows")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-attributes -DHAVE_SNPRINTF")
+    add_compile_definitions(BUILDING_DLL)
+endif()
+
+if (ENABLE_MPI)
+    add_compile_definitions(ENABLE_MPI)
+endif ()
+
+if(ENABLE_GPU)
+    find_package(CUDA REQUIRED)
+    find_package(Threads)
+    if(${CUDA_VERSION} VERSION_LESS ${MS_REQUIRE_CUDA_VERSION})
+      message(FATAL_ERROR "The minimum CUDA version ${MS_REQUIRE_CUDA_VERSION} is required, but only CUDA ${CUDA_VERSION} found.")
+    endif()
+    enable_language(CUDA)
+    if(NOT CUDA_PATH OR CUDA_PATH STREQUAL "")
+        if(DEFINED ENV{CUDA_HOME})
+            set(CUDA_PATH $ENV{CUDA_HOME})
+        else()
+            set(CUDA_PATH ${CUDA_TOOLKIT_ROOT_DIR})
+        endif()
+    endif()
+    if(NOT CUDNN_PATH OR CUDNN_PATH STREQUAL "")
+        set(CUDNN_PATH ${CUDA_PATH})
+    endif()
+    if(NOT CUPTI_INCLUDE_DIRS OR CUPTI_INCLUDE_DIRS STREQUAL "")
+        set(CUPTI_INCLUDE_DIRS  ${CUDA_PATH}/extras/CUPTI/include)
+    endif()
+    message("CUDA_PATH: ${CUDA_PATH}")
+    message("CUDA_INCLUDE_DIRS: ${CUDA_INCLUDE_DIRS}")
+    message("CUDNN_PATH: ${CUDNN_PATH}")
+    message("CUPTI_INCLUDE_DIRS: ${CUPTI_INCLUDE_DIRS}")
+    include_directories(${CUDNN_PATH} ${CUDA_PATH} ${CUDA_INCLUDE_DIRS} ${CUPTI_INCLUDE_DIRS})
+
+    file(GLOB_RECURSE GPU_SRC_LIST RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}
+            "runtime/device/gpu/*.cc"
+            "runtime/device/gpu/*.cu"
+            "backend/kernel_compiler/gpu/*.cu"
+            "backend/kernel_compiler/akg/gpu/*.cc"
+            "backend/kernel_compiler/akg/akg_kernel_build.cc"
+            "backend/kernel_compiler/akg/akg_kernel_attrs_process.cc"
+            )
+
+    list(APPEND CUDA_NVCC_FLAGS -arch=sm_53 --expt-relaxed-constexpr)
+    list(REMOVE_ITEM GPU_SRC_LIST "runtime/device/gpu/blocking_queue.cc" "runtime/device/gpu/gpu_buffer_mgr.cc")
+    list(REMOVE_ITEM GPU_SRC_LIST "runtime/device/gpu/mpi/mpi_initializer.cc"
+                                  "runtime/device/gpu/distribution/collective_wrapper.cc"
+                                  "runtime/device/gpu/distribution/mpi_wrapper.cc"
+                                  "runtime/device/gpu/distribution/nccl_wrapper.cc"
+                                  )
+
+    set(NVCC_TMP_CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS})
+    string(REPLACE "-std=c++17" "-std=c++11" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
+    set_property(SOURCE ${GPU_SRC_LIST} PROPERTY COMPILE_DEFINITIONS SUBMODULE_ID=mindspore::SubModuleId::SM_DEVICE)
+    cuda_add_library(gpu_cuda_lib STATIC ${GPU_SRC_LIST})
+    set(CMAKE_CXX_FLAGS ${NVCC_TMP_CMAKE_CXX_FLAGS})
+    add_compile_definitions(ENABLE_GPU)
+endif ()
+
+
+## make protobuf files
+file(COPY "${ms_onnx_INC}/onnx/onnx.proto" DESTINATION ${CMAKE_BINARY_DIR}/proto)
+file(GLOB ONNX_PROTO "" ${CMAKE_BINARY_DIR}/proto/onnx.proto)
+message("onnx proto path is :" ${ONNX_PROTO})
+ms_protobuf_generate(ONNX_PROTO_SRCS ONNX_PROTO_HDRS ${ONNX_PROTO})
+list(APPEND MINDSPORE_PROTO_LIST ${ONNX_PROTO_SRCS})
+
+if (ENABLE_DEBUGGER)
+    # debugger: compile proto files
+    include_directories("${CMAKE_BINARY_DIR}/debug/debugger")
+    file(GLOB_RECURSE DEBUGGER_PROTO_LIST RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "debug/debugger/debug_graph.proto")
+    ms_protobuf_generate(DEBUGGER_PROTO_SRCS DEBUGGER_PROTO_HDRS ${DEBUGGER_PROTO_LIST})
+    file(GLOB_RECURSE DEBUGGER_GRPC_LIST RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "debug/debugger/debug_grpc.proto")
+    ms_grpc_generate(DEBUGGER_GRPC_SRCS DEBUGGER_GRPC_HDRS ${DEBUGGER_GRPC_LIST})
+    list(APPEND MINDSPORE_PROTO_LIST ${DEBUGGER_PROTO_SRCS})
+    list(APPEND MINDSPORE_PROTO_LIST ${DEBUGGER_GRPC_SRCS})
+endif ()
+
+if (ENABLE_DUMP_PROTO)
+    include_directories(${CMAKE_BINARY_DIR})
+    file(GLOB_RECURSE PROTO_LIST RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "utils/node_strategy.proto")
+    ms_protobuf_generate(PROTO_SRCS PROTO_HDRS ${PROTO_LIST})
+
+    file(GLOB_RECURSE PROTO_PY RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}
+        "utils/anf_ir.proto"
+        "utils/summary.proto"
+        "utils/lineage.proto"
+        "utils/checkpoint.proto"
+        "utils/print.proto"
+    )
+    ms_protobuf_generate_py(PY_SRCS PY_HDRS PY_PYS ${PROTO_PY})
+
+    list(APPEND MINDSPORE_PROTO_LIST ${PROTO_SRCS})
+    list(APPEND MINDSPORE_PROTO_LIST ${PY_SRCS})
+endif ()
+
+if (ENABLE_D)
+    include_directories("${CMAKE_BINARY_DIR}/backend/kernel_compiler/aicpu")
+    file(GLOB_RECURSE PROTO_IN RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "backend/kernel_compiler/aicpu/proto/*.proto")
+    ms_protobuf_generate(PROTOSRCS PROTOHDRS ${PROTO_IN})
+    
+    file(GLOB_RECURSE PROTO_DUMP RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "runtime/device/ascend/dump/proto/*.proto")
+    ms_protobuf_generate(DUMP_PROTOSRCS PROTOHDRS ${PROTO_DUMP})
+
+    list(APPEND MINDSPORE_PROTO_LIST ${PROTOSRCS})
+    list(APPEND MINDSPORE_PROTO_LIST ${PREDICT_PROTOSRCS})
+    list(APPEND MINDSPORE_PROTO_LIST ${DUMP_PROTOSRCS})
+
+    add_compile_definitions(ENABLE_D)
+endif ()
+
+if (MINDSPORE_PROTO_LIST)
+    add_library(proto_input STATIC ${MINDSPORE_PROTO_LIST})
+    set_target_properties(proto_input PROPERTIES COMPILE_FLAGS "-Wno-unused-variable")
+endif()
+
+## make sub objects
+set(SUB_COMP
+        transform/graph_ir
+        transform/onnx
+        backend/optimizer
+        backend/kernel_compiler
+        backend/session
+        runtime/device
+        frontend/optimizer
+        frontend/parallel
+        frontend/operator
+        pipeline/jit
+        pipeline/pynative
+        common debug pybind_api utils vm profiler
+)
+
+foreach (_comp ${SUB_COMP})
+    add_subdirectory(${_comp})
+    string(REPLACE "/" "_" sub ${_comp})
+    if (TARGET _mindspore_${sub}_obj)
+        list(APPEND SUB_OBJECTS_SRC $<TARGET_OBJECTS:_mindspore_${sub}_obj>)
+        add_dependencies(_mindspore_${sub}_obj proto_input )
+    endif ()
+endforeach ()
+
+set_property(SOURCE ${SUB_OBJECTS_SRC} PROPERTY COMPILE_DEFINITIONS SUBMODULE_ID=mindspore::SubModuleId::SM_ME)
+add_library(mindspore STATIC ${SUB_OBJECTS_SRC})
+
+target_link_libraries(proto_input mindspore::protobuf)
+
+target_link_libraries(mindspore mindspore_core)
+
+if (ENABLE_DEBUGGER)
+    # debugger: link grpc
+    target_link_libraries(proto_input mindspore::grpc++)
+endif()
+
+target_link_libraries(mindspore proto_input)
+target_link_libraries(mindspore securec mindspore::flatbuffers)
+
+if (NOT WIN32)
+  target_link_libraries(mindspore dl)
+endif()
+
+if (ENABLE_GE)
+    if(ENABLE_TRAIN)
+        target_link_libraries(mindspore ge_runner hccl)
+    else ()
+        target_link_libraries(mindspore ge_client)
+    endif ()
+    target_link_libraries(mindspore graph tsdclient datatransfer)
+endif()
+
+if (ENABLE_D)
+    if (DEFINED ENV{D_LINK_PATH})
+        if (CMAKE_HOST_SYSTEM_PROCESSOR MATCHES "aarch64")
+            MESSAGE("system processor matches aarch64")
+            set(D_LIB_PATH $ENV{D_LINK_PATH}/aarch64)
+        elseif (CMAKE_HOST_SYSTEM_PROCESSOR MATCHES "x86_64")
+            MESSAGE("system processor matches x86_64")
+            set(D_LIB_PATH $ENV{D_LINK_PATH}/x86_64)
+        else ()
+            MESSAGE("system ${CMAKE_HOST_SYSTEM_PROCESSOR} not support")
+        endif()
+    else ()
+        MESSAGE("use system default lib")
+        if (DEFINED ENV{ASCEND_CUSTOM_PATH})
+            set(ASCEND_PATH $ENV{ASCEND_CUSTOM_PATH})
+        else ()
+            set(ASCEND_PATH /usr/local/Ascend)
+        endif ()
+        set(ASCEND_DRIVER_PATH ${ASCEND_PATH}/driver/lib64/common)
+        set(ASCEND_DRIVER_BACK_PATH ${ASCEND_PATH}/driver/lib64/driver)
+        set(ASCEND_RUNTIME_PATH ${ASCEND_PATH}/fwkacllib/lib64)
+    endif()
+
+    MESSAGE("USE DAV LIB PATH: ${ASCEND_PATH}")
+    find_library(HCCL hccl ${ASCEND_RUNTIME_PATH})
+    find_library(CCE_LIB cce ${ASCEND_RUNTIME_PATH})
+    find_library(RUNTIME_LIB runtime ${ASCEND_RUNTIME_PATH})
+    find_library(TSDCLIENT tsdclient HINTS ${ASCEND_RUNTIME_PATH} ${ASCEND_DRIVER_BACK_PATH})
+    find_library(DATATRANSFER datatransfer HINTS ${ASCEND_RUNTIME_PATH} ${ASCEND_DRIVER_BACK_PATH})
+    find_library(PROFILING msprof ${ASCEND_DRIVER_PATH})
+    target_link_libraries(mindspore ge_runtime ${CCE_LIB} ${RUNTIME_LIB} ${TSDCLIENT} ${PROFILING} ${HCCL} ${DATATRANSFER})
+endif()
+
+# link protobuf
+if (ENABLE_D)
+    target_link_libraries(mindspore mindspore::protobuf)
+endif()
+
+# set c_expression building
+set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
+set_property(SOURCE "pipeline/jit/init.cc" PROPERTY COMPILE_DEFINITIONS SUBMODULE_ID=mindspore::SubModuleId::SM_PIPELINE)
+pybind11_add_module(_c_expression "pipeline/jit/init.cc")
+
+MESSAGE(STATUS "operation system is ${CMAKE_SYSTEM}")
+if (CMAKE_SYSTEM_NAME MATCHES "Linux")
+    target_link_options(_c_expression PRIVATE -Wl,-init,mindspore_log_init)
+    set(ORIGIN_PATH $ORIGIN)
+elseif (CMAKE_SYSTEM_NAME MATCHES "Darwin")
+    set_target_properties(_c_expression PROPERTIES MACOSX_RPATH ON)
+    set(ORIGIN_PATH @loader_path)
+elseif (CMAKE_SYSTEM_NAME MATCHES "Windows")
+    set(ORIGIN_PATH $ORIGIN)
+else ()
+    MESSAGE(FATAL_ERROR "other platform: ${CMAKE_SYSTEM_NAME}")
+endif ()
+
+set(ORIGIN_PATH ${ORIGIN_PATH}/lib)
+set_target_properties(_c_expression PROPERTIES INSTALL_RPATH ${ORIGIN_PATH})
+
+if (CMAKE_SYSTEM_NAME MATCHES "Windows")
+    target_link_libraries(mindspore mindspore::pybind11_module)
+    target_link_libraries(mindspore mindspore_gvar)
+    target_link_libraries(_c_expression PRIVATE -Wl,--whole-archive mindspore -Wl,--no-whole-archive)
+else ()
+    if (ENABLE_CPU AND (ENABLE_D OR ENABLE_GPU))
+        target_link_libraries(mindspore mindspore::pslite mindspore::protobuf ${zeromq_DIRPATH}/zmq_install/lib/libzmq.a)
+        if (${ENABLE_IBVERBS} STREQUAL "ON")
+            target_link_libraries(mindspore ibverbs rdmacm)
+        endif()
+    endif()
+    target_link_libraries(_c_expression PRIVATE -Wl,--whole-archive mindspore -Wl,--no-whole-archive)
+    target_link_libraries(_c_expression PRIVATE mindspore::pybind11_module)
+    target_link_libraries(_c_expression PRIVATE mindspore_gvar)
+endif ()
+
+if (USE_GLOG)
+    target_link_libraries(_c_expression PRIVATE mindspore::glog)
+endif ()
+
+if (ENABLE_DUMP_PROTO)
+    message("add protobuf lib to c_expression")
+    target_link_libraries(_c_expression PRIVATE mindspore::protobuf)
+endif ()
+
+if (ENABLE_GPU)
+    message("add gpu lib to c_expression")
+    target_link_libraries(_c_expression PRIVATE gpu_cuda_lib gpu_queue cublas
+                          ${CUDA_PATH}/lib64/libcurand.so
+                          ${CUDNN_PATH}/lib64/libcudnn.so
+                          ${CUDA_PATH}/lib64/libcudart.so
+                          ${CUDA_PATH}/lib64/stubs/libcuda.so
+                          ${CUDA_PATH}/lib64/libcusolver.so)
+    if (ENABLE_MPI)
+        set_target_properties(_ms_mpi PROPERTIES INSTALL_RPATH ${ORIGIN_PATH})
+    endif()
+endif ()
+
+if (ENABLE_CPU)
+    target_link_libraries(_c_expression PRIVATE mindspore::dnnl mindspore::mkldnn)
+endif ()
+
+if (ENABLE_MINDDATA)
+    add_subdirectory(minddata/mindrecord)
+    add_subdirectory(minddata/dataset)
+endif ()
+
+# build inference
+set(LOAD_ONNX_SRC
+        ${CMAKE_CURRENT_SOURCE_DIR}/utils/load_onnx/anf_converter.cc
+        ${CMAKE_CURRENT_SOURCE_DIR}/utils/load_onnx/anf_model_parser.cc
+        )
+add_library(inference SHARED
+        ${CMAKE_CURRENT_SOURCE_DIR}/backend/session/infer_session.cc
+        ${LOAD_ONNX_SRC}
+        )
+target_link_libraries(inference PRIVATE ${PYTHON_LIBRARIES} ${SECUREC_LIBRARY}
+        -Wl,--whole-archive mindspore -Wl,--no-whole-archive mindspore_gvar mindspore::protobuf)
+
+if (ENABLE_CPU)
+    target_link_libraries(inference PRIVATE mindspore::dnnl mindspore::mkldnn)
+endif ()
+
+if (USE_GLOG)
+    target_link_libraries(inference PRIVATE mindspore::glog)
+endif()
+
+if (CMAKE_SYSTEM_NAME MATCHES "Linux")
+    target_link_options(inference PRIVATE -Wl,-init,common_log_init)
+elseif (CMAKE_SYSTEM_NAME MATCHES "Darwin")
+    set_target_properties(inference PROPERTIES MACOSX_RPATH ON)
+endif ()
+

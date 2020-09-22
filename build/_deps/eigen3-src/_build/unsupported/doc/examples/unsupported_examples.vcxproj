@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{41A13F86-F979-3590-BC91-6C8C112AAF2A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>unsupported_examples</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\examples;D:\Mindspore\mindspore-master\build\_deps\eigen3-src;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\examples\..\..\..\unsupported;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\examples\..\..\..\unsupported\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\examples;D:\Mindspore\mindspore-master\build\_deps\eigen3-src;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\examples\..\..\..\unsupported;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\examples\..\..\..\unsupported\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\examples;D:\Mindspore\mindspore-master\build\_deps\eigen3-src;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\examples\..\..\..\unsupported;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\examples\..\..\..\unsupported\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\examples;D:\Mindspore\mindspore-master\build\_deps\eigen3-src;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\examples\..\..\..\unsupported;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\examples\..\..\..\unsupported\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\examples\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Mindspore/mindspore-master/build/_deps/eigen3-src/unsupported/doc/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/Mindspore/mindspore-master/build/_deps/eigen3-src -BD:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build --check-stamp-file D:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build/unsupported/doc/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Mindspore/mindspore-master/build/_deps/eigen3-src/unsupported/doc/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/Mindspore/mindspore-master/build/_deps/eigen3-src -BD:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build --check-stamp-file D:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build/unsupported/doc/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Mindspore/mindspore-master/build/_deps/eigen3-src/unsupported/doc/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/Mindspore/mindspore-master/build/_deps/eigen3-src -BD:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build --check-stamp-file D:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build/unsupported/doc/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Mindspore/mindspore-master/build/_deps/eigen3-src/unsupported/doc/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/Mindspore/mindspore-master/build/_deps/eigen3-src -BD:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build --check-stamp-file D:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build/unsupported/doc/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\ZERO_CHECK.vcxproj">
+      <Project>{380EE55D-FFA2-36E2-8215-F1DBCB56DFD9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples\example_BVH_Example.vcxproj">
+      <Project>{74C4FA75-89D4-324D-A9F9-2B2CB88B830E}</Project>
+      <Name>example_BVH_Example</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples\example_EulerAngles.vcxproj">
+      <Project>{D8B75BCB-35F3-312E-83A9-1E13D76C5472}</Project>
+      <Name>example_EulerAngles</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples\example_FFT.vcxproj">
+      <Project>{FE07B401-AB39-37C7-8A4D-103A340AA768}</Project>
+      <Name>example_FFT</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples\example_MatrixExponential.vcxproj">
+      <Project>{5E6B675F-46B1-3DB9-9862-910DEDAB568E}</Project>
+      <Name>example_MatrixExponential</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples\example_MatrixFunction.vcxproj">
+      <Project>{A91C1115-24E0-30D9-B3F2-F0F3A46B6CF3}</Project>
+      <Name>example_MatrixFunction</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples\example_MatrixLogarithm.vcxproj">
+      <Project>{B46FE8BF-988B-374C-ABED-04D041D9F902}</Project>
+      <Name>example_MatrixLogarithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples\example_MatrixPower.vcxproj">
+      <Project>{64242B81-68BF-39BB-8CF8-A2EEA65163F1}</Project>
+      <Name>example_MatrixPower</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples\example_MatrixPower_optimal.vcxproj">
+      <Project>{2233D2F8-81B3-3D6A-999A-07E1403F1200}</Project>
+      <Name>example_MatrixPower_optimal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples\example_MatrixSine.vcxproj">
+      <Project>{74280F46-25CB-3581-8F74-FCA3FFADD153}</Project>
+      <Name>example_MatrixSine</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples\example_MatrixSinh.vcxproj">
+      <Project>{EE7F94C7-A8BE-38EA-B159-10DC25A00AC4}</Project>
+      <Name>example_MatrixSinh</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples\example_MatrixSquareRoot.vcxproj">
+      <Project>{C6675448-94AA-3AB1-8166-B81F9DB2218A}</Project>
+      <Name>example_MatrixSquareRoot</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples\example_PolynomialSolver1.vcxproj">
+      <Project>{E0723959-7C51-31B2-BBC6-ABC1CA6DDA52}</Project>
+      <Name>example_PolynomialSolver1</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\unsupported\doc\examples\example_PolynomialUtils1.vcxproj">
+      <Project>{9C76403C-38D0-3E22-BC71-3D9D62DDF643}</Project>
+      <Name>example_PolynomialUtils1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,1756 @@
+/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/geray/mindspore-master
+-- The C compiler identification is GNU 10.2.0
+-- The CXX compiler identification is GNU 10.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+PATCH_EXECUTABLE=/usr/bin/patch
+MS LIBS CACHE PATH:  /home/geray/mindspore-master/cmake-build-debug/.mslib
+set make thread num: 8
+CMake Warning (dev) at cmake/utils.cmake:204 (set):
+  Cannot set "MS_FIND_NO_DEFAULT_PATH": current scope has no parent.
+Call Stack (most recent call first):
+  cmake/mind_expression.cmake:12 (include)
+  CMakeLists.txt:49 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+pkg name:Eigen3,eigen3
+eigen3 config hash: 65e827cb6fb06634b86270820ed99f7f
+Found pkg: Eigen3
+pkg name:nlohmann_json,nlohmann_json
+nlohmann_json config hash: cd2ecccbc36884fc61b4fde31086d027
+pkg name:protobuf,protobuf
+protobuf config hash: 4323d9fd41921ec1fa643ede4153ca87
+_FIND:/home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87
+download:  , protobuf , https://github.com/protocolbuffers/protobuf/archive/v3.8.0.tar.gz
+-- Populating protobuf
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-subbuild
+Scanning dependencies of target protobuf-populate
+[ 11%] Creating directories for 'protobuf-populate'
+[ 22%] Performing download step (download, verify and extract) for 'protobuf-populate'
+-- verifying file...
+       file='/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-subbuild/protobuf-populate-prefix/src/v3.8.0.tar.gz'
+-- File already exists and hash match (skip download):
+  file='/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-subbuild/protobuf-populate-prefix/src/v3.8.0.tar.gz'
+  MD5='3d9e32700639618a4d2d342c99d4507a'
+-- extracting...
+     src='/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-subbuild/protobuf-populate-prefix/src/v3.8.0.tar.gz'
+     dst='/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 33%] No update step for 'protobuf-populate'
+[ 44%] No patch step for 'protobuf-populate'
+[ 55%] No configure step for 'protobuf-populate'
+[ 66%] No build step for 'protobuf-populate'
+[ 77%] No install step for 'protobuf-populate'
+[ 88%] No test step for 'protobuf-populate'
+[100%] Completed 'protobuf-populate'
+[100%] Built target protobuf-populate
+protobuf_SOURCE_DIR : /home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src
+CMake Warning (dev) at cmake/external_libs/protobuf.cmake:16 (mindspore_add_pkg):
+  A logical block opening on the line
+
+    /home/geray/mindspore-master/cmake/utils.cmake:303 (foreach)
+
+  closes on the line
+
+    /home/geray/mindspore-master/cmake/utils.cmake:306 (endforeach)
+
+  with mis-matching arguments.
+Call Stack (most recent call first):
+  cmake/mind_expression.cmake:16 (include)
+  CMakeLists.txt:49 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- The C compiler identification is GNU 10.2.0
+-- The CXX compiler identification is GNU 10.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+-- 3.8.0.0
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found ZLIB: /usr/lib/libz.so (found version "1.2.11") 
+CMake Warning (dev) at install.cmake:60 (message):
+  The file
+  "/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/io_win32.h"
+  is listed in
+  "/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/cmake/cmake/extract_includes.bat.in"
+  but there not exists.  The file will not be installed.
+Call Stack (most recent call first):
+  CMakeLists.txt:231 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/_build
+Scanning dependencies of target libprotobuf-lite
+[  0%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/any_lite.cc.o
+[  1%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/implicit_weak_message.cc.o
+[  1%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/generated_message_util.cc.o
+[  2%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/generated_message_table_driven_lite.cc.o
+[  3%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/arena.cc.o
+[  3%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/extension_set.cc.o
+[  3%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/io/coded_stream.cc.o
+Scanning dependencies of target libprotobuf
+[  3%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/any_lite.cc.o
+[  4%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/io/io_win32.cc.o
+[  4%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/io/strtod.cc.o
+[  5%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/arena.cc.o
+[  5%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/extension_set.cc.o
+[  6%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/io/zero_copy_stream.cc.o
+[  6%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.o
+[  7%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/message_lite.cc.o
+[  7%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/parse_context.cc.o
+[  8%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/generated_message_table_driven_lite.cc.o
+[  9%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/repeated_field.cc.o
+[ 10%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/bytestream.cc.o
+[ 10%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/common.cc.o
+[ 11%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/int128.cc.o
+[ 11%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/status.cc.o
+[ 12%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/statusor.cc.o
+[ 12%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/generated_message_util.cc.o
+[ 13%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/implicit_weak_message.cc.o
+[ 13%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/io/coded_stream.cc.o
+[ 13%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/stringpiece.cc.o
+[ 14%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/stringprintf.cc.o
+[ 15%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/io/io_win32.cc.o
+[ 15%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/structurally_valid.cc.o
+[ 15%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/io/strtod.cc.o
+[ 16%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/strutil.cc.o
+[ 17%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/io/zero_copy_stream.cc.o
+[ 17%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/time.cc.o
+[ 17%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.o
+[ 18%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/message_lite.cc.o
+[ 18%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/parse_context.cc.o
+[ 19%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/repeated_field.cc.o
+[ 20%] Building CXX object CMakeFiles/libprotobuf-lite.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/wire_format_lite.cc.o
+[ 20%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/bytestream.cc.o
+[ 21%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/common.cc.o
+[ 21%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/int128.cc.o
+[ 22%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/status.cc.o
+[ 23%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/statusor.cc.o
+[ 24%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/stringprintf.cc.o
+[ 24%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/structurally_valid.cc.o
+[ 24%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/stringpiece.cc.o
+[ 24%] Linking CXX static library libprotobuf-lite.a
+[ 25%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/strutil.cc.o
+[ 25%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/time.cc.o
+[ 25%] Built target libprotobuf-lite
+[ 26%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/wire_format_lite.cc.o
+[ 26%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/any.cc.o
+[ 27%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/any.pb.cc.o
+[ 27%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/api.pb.cc.o
+[ 28%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/importer.cc.o
+[ 28%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/parser.cc.o
+[ 29%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/descriptor.cc.o
+[ 29%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/descriptor.pb.cc.o
+[ 30%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/descriptor_database.cc.o
+[ 30%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/duration.pb.cc.o
+[ 31%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/dynamic_message.cc.o
+[ 31%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/empty.pb.cc.o
+[ 32%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/extension_set_heavy.cc.o
+[ 33%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/field_mask.pb.cc.o
+[ 33%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/generated_message_reflection.cc.o
+[ 34%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/generated_message_table_driven.cc.o
+[ 34%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/io/gzip_stream.cc.o
+[ 35%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/io/printer.cc.o
+[ 35%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/io/tokenizer.cc.o
+[ 36%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/io/zero_copy_stream_impl.cc.o
+[ 36%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/map_field.cc.o
+[ 37%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/message.cc.o
+[ 37%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/reflection_ops.cc.o
+[ 38%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/service.cc.o
+[ 38%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/source_context.pb.cc.o
+[ 39%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/struct.pb.cc.o
+[ 39%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/mathlimits.cc.o
+[ 40%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/stubs/substitute.cc.o
+[ 40%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/text_format.cc.o
+[ 41%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/timestamp.pb.cc.o
+[ 41%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/type.pb.cc.o
+[ 42%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/unknown_field_set.cc.o
+[ 43%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/delimited_message_util.cc.o
+[ 43%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/field_comparator.cc.o
+[ 44%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/field_mask_util.cc.o
+[ 44%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/internal/datapiece.cc.o
+[ 45%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/internal/default_value_objectwriter.cc.o
+[ 45%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/internal/error_listener.cc.o
+[ 46%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/internal/field_mask_utility.cc.o
+[ 46%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/internal/json_escaping.cc.o
+[ 47%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/internal/json_objectwriter.cc.o
+[ 47%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/internal/json_stream_parser.cc.o
+[ 48%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/internal/object_writer.cc.o
+[ 48%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/internal/proto_writer.cc.o
+[ 49%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/internal/protostream_objectsource.cc.o
+[ 49%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/internal/protostream_objectwriter.cc.o
+[ 50%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/internal/type_info.cc.o
+[ 50%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/internal/type_info_test_helper.cc.o
+[ 51%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/internal/utility.cc.o
+[ 51%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/json_util.cc.o
+[ 52%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/message_differencer.cc.o
+[ 53%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/time_util.cc.o
+[ 53%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/util/type_resolver_util.cc.o
+[ 54%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/wire_format.cc.o
+[ 54%] Building CXX object CMakeFiles/libprotobuf.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/wrappers.pb.cc.o
+[ 55%] Linking CXX static library libprotobuf.a
+[ 55%] Built target libprotobuf
+Scanning dependencies of target libprotoc
+[ 56%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/code_generator.cc.o
+[ 56%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/command_line_interface.cc.o
+[ 57%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/cpp/cpp_enum.cc.o
+[ 57%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/cpp/cpp_enum_field.cc.o
+[ 57%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/cpp/cpp_field.cc.o
+[ 58%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/cpp/cpp_generator.cc.o
+[ 59%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/cpp/cpp_extension.cc.o
+[ 60%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/cpp/cpp_file.cc.o
+[ 60%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/cpp/cpp_helpers.cc.o
+[ 61%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/cpp/cpp_map_field.cc.o
+[ 61%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/cpp/cpp_message.cc.o
+[ 62%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/cpp/cpp_message_field.cc.o
+[ 62%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/cpp/cpp_padding_optimizer.cc.o
+[ 63%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/cpp/cpp_primitive_field.cc.o
+[ 63%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/cpp/cpp_service.cc.o
+[ 64%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/cpp/cpp_string_field.cc.o
+[ 64%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/csharp/csharp_doc_comment.cc.o
+[ 65%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/csharp/csharp_enum.cc.o
+[ 65%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/csharp/csharp_enum_field.cc.o
+[ 66%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/csharp/csharp_field_base.cc.o
+[ 66%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/csharp/csharp_generator.cc.o
+[ 67%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/csharp/csharp_helpers.cc.o
+[ 67%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/csharp/csharp_map_field.cc.o
+[ 68%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/csharp/csharp_message.cc.o
+[ 68%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/csharp/csharp_message_field.cc.o
+[ 69%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/csharp/csharp_primitive_field.cc.o
+[ 70%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/csharp/csharp_reflection_class.cc.o
+[ 70%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc.o
+[ 71%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc.o
+[ 71%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc.o
+[ 72%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/csharp/csharp_source_generator_base.cc.o
+[ 72%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc.o
+[ 73%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_context.cc.o
+[ 73%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_doc_comment.cc.o
+[ 74%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_enum.cc.o
+[ 74%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_enum_field.cc.o
+[ 75%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_enum_field_lite.cc.o
+[ 75%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_enum_lite.cc.o
+[ 76%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_extension.cc.o
+[ 76%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_extension_lite.cc.o
+[ 77%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_field.cc.o
+[ 77%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_file.cc.o
+[ 78%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_generator.cc.o
+[ 78%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_generator_factory.cc.o
+[ 79%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_helpers.cc.o
+[ 80%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_map_field.cc.o
+[ 80%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_map_field_lite.cc.o
+[ 81%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_message.cc.o
+[ 81%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_message_builder.cc.o
+[ 82%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_message_builder_lite.cc.o
+[ 82%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_message_field.cc.o
+[ 83%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_message_field_lite.cc.o
+[ 83%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_message_lite.cc.o
+[ 84%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_name_resolver.cc.o
+[ 84%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_primitive_field.cc.o
+[ 85%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_primitive_field_lite.cc.o
+[ 85%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_service.cc.o
+[ 86%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_shared_code_generator.cc.o
+[ 86%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_string_field.cc.o
+[ 87%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/java/java_string_field_lite.cc.o
+[ 87%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/js/js_generator.cc.o
+[ 88%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/js/well_known_types_embed.cc.o
+[ 88%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/objectivec/objectivec_enum.cc.o
+[ 89%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/objectivec/objectivec_enum_field.cc.o
+[ 90%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/objectivec/objectivec_extension.cc.o
+[ 90%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/objectivec/objectivec_field.cc.o
+[ 91%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/objectivec/objectivec_file.cc.o
+[ 91%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/objectivec/objectivec_generator.cc.o
+[ 92%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/objectivec/objectivec_helpers.cc.o
+[ 92%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/objectivec/objectivec_map_field.cc.o
+[ 93%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/objectivec/objectivec_message.cc.o
+[ 93%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/objectivec/objectivec_message_field.cc.o
+[ 94%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/objectivec/objectivec_oneof.cc.o
+[ 94%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/objectivec/objectivec_primitive_field.cc.o
+[ 95%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/php/php_generator.cc.o
+[ 95%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/plugin.cc.o
+[ 96%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/plugin.pb.cc.o
+[ 96%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/python/python_generator.cc.o
+[ 97%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/ruby/ruby_generator.cc.o
+[ 97%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/subprocess.cc.o
+[ 98%] Building CXX object CMakeFiles/libprotoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/zip_writer.cc.o
+[ 98%] Linking CXX static library libprotoc.a
+[ 98%] Built target libprotoc
+Scanning dependencies of target protoc
+[ 99%] Building CXX object CMakeFiles/protoc.dir/home/geray/mindspore-master/cmake-build-debug/_deps/protobuf-src/src/google/protobuf/compiler/main.cc.o
+[100%] Linking CXX executable protoc
+[100%] Built target protoc
+Install the project...
+-- Install configuration: ""
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/lib/libprotobuf-lite.a
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/lib/libprotobuf.a
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/lib/libprotoc.a
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/bin/protoc-3.8.0.0
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/bin/protoc
+-- Set runtime path of "/home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/bin/protoc-3.8.0.0" to "$ORIGIN/../lib"
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/lib/pkgconfig/protobuf.pc
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/lib/pkgconfig/protobuf-lite.pc
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/any.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/any.pb.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/api.pb.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/arena.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/arena_impl.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/arenastring.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/code_generator.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/command_line_interface.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/cpp/cpp_generator.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/csharp/csharp_generator.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/csharp/csharp_names.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/importer.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/java/java_generator.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/java/java_names.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/js/js_generator.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/js/well_known_types_embed.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/objectivec/objectivec_generator.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/objectivec/objectivec_helpers.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/parser.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/php/php_generator.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/plugin.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/plugin.pb.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/python/python_generator.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/ruby/ruby_generator.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/descriptor.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/descriptor.pb.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/descriptor_database.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/duration.pb.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/dynamic_message.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/empty.pb.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/extension_set.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/extension_set_inl.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/field_mask.pb.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/generated_enum_reflection.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/generated_enum_util.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/generated_message_reflection.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/generated_message_table_driven.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/generated_message_util.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/has_bits.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/implicit_weak_message.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/inlined_string_field.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/io/coded_stream.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/io/gzip_stream.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/io/printer.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/io/strtod.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/io/tokenizer.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/io/zero_copy_stream.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/io/zero_copy_stream_impl.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/io/zero_copy_stream_impl_lite.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/map.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/map_entry.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/map_entry_lite.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/map_field.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/map_field_inl.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/map_field_lite.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/map_type_handler.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/message.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/message_lite.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/metadata.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/metadata_lite.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/parse_context.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/port.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/port_def.inc
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/port_undef.inc
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/reflection.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/reflection_ops.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/repeated_field.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/service.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/source_context.pb.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/struct.pb.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/stubs/bytestream.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/stubs/callback.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/stubs/casts.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/stubs/common.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/stubs/fastmem.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/stubs/hash.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/stubs/logging.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/stubs/macros.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/stubs/mutex.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/stubs/once.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/stubs/platform_macros.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/stubs/port.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/stubs/status.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/stubs/stl_util.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/stubs/stringpiece.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/stubs/strutil.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/stubs/template_util.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/text_format.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/timestamp.pb.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/type.pb.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/unknown_field_set.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/util/delimited_message_util.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/util/field_comparator.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/util/field_mask_util.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/util/json_util.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/util/message_differencer.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/util/time_util.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/util/type_resolver.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/util/type_resolver_util.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/wire_format.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/wire_format_lite.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/wrappers.pb.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/any.proto
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/api.proto
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/plugin.proto
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/descriptor.proto
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/duration.proto
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/empty.proto
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/field_mask.proto
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/source_context.proto
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/struct.proto
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/timestamp.proto
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/type.proto
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/wrappers.proto
+-- Up-to-date: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/descriptor.proto
+-- Up-to-date: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/any.proto
+-- Up-to-date: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/api.proto
+-- Up-to-date: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/duration.proto
+-- Up-to-date: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/empty.proto
+-- Up-to-date: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/field_mask.proto
+-- Up-to-date: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/source_context.proto
+-- Up-to-date: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/struct.proto
+-- Up-to-date: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/timestamp.proto
+-- Up-to-date: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/type.proto
+-- Up-to-date: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/wrappers.proto
+-- Up-to-date: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/include/google/protobuf/compiler/plugin.proto
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/lib/cmake/protobuf/protobuf-targets.cmake
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/lib/cmake/protobuf/protobuf-targets-noconfig.cmake
+-- Up-to-date: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/lib/cmake/protobuf
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/lib/cmake/protobuf/protobuf-module.cmake
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/lib/cmake/protobuf/protobuf-config.cmake
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/lib/cmake/protobuf/protobuf-config-version.cmake
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/lib/cmake/protobuf/protobuf-options.cmake
+_FIND:/home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87
+found /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/bin/protoc
+found /home/geray/mindspore-master/cmake-build-debug/.mslib/protobuf_4323d9fd41921ec1fa643ede4153ca87/lib/libprotobuf.a
+pkg name:pybind11,pybind11
+pybind11 config hash: 9adde7a5a6c172fdeec9638734ff4367
+-- Could NOT find pybind11 (missing: pybind11_DIR)
+download:  , pybind11 , https://github.com/pybind/pybind11/archive/v2.4.3.tar.gz
+-- Populating pybind11
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/geray/mindspore-master/cmake-build-debug/_deps/pybind11-subbuild
+Scanning dependencies of target pybind11-populate
+[ 11%] Creating directories for 'pybind11-populate'
+[ 22%] Performing download step (download, verify and extract) for 'pybind11-populate'
+-- Downloading...
+   dst='/home/geray/mindspore-master/cmake-build-debug/_deps/pybind11-subbuild/pybind11-populate-prefix/src/v2.4.3.tar.gz'
+   timeout='none'
+-- Using src='https://github.com/pybind/pybind11/archive/v2.4.3.tar.gz'
+-- [download 100% complete]
+-- verifying file...
+       file='/home/geray/mindspore-master/cmake-build-debug/_deps/pybind11-subbuild/pybind11-populate-prefix/src/v2.4.3.tar.gz'
+-- Downloading... done
+-- extracting...
+     src='/home/geray/mindspore-master/cmake-build-debug/_deps/pybind11-subbuild/pybind11-populate-prefix/src/v2.4.3.tar.gz'
+     dst='/home/geray/mindspore-master/cmake-build-debug/_deps/pybind11-src'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 33%] No update step for 'pybind11-populate'
+[ 44%] No patch step for 'pybind11-populate'
+[ 55%] No configure step for 'pybind11-populate'
+[ 66%] No build step for 'pybind11-populate'
+[ 77%] No install step for 'pybind11-populate'
+[ 88%] No test step for 'pybind11-populate'
+[100%] Completed 'pybind11-populate'
+[100%] Built target pybind11-populate
+pybind11_SOURCE_DIR : /home/geray/mindspore-master/cmake-build-debug/_deps/pybind11-src
+CMake Warning (dev) at cmake/external_libs/pybind11.cmake:3 (mindspore_add_pkg):
+  A logical block opening on the line
+
+    /home/geray/mindspore-master/cmake/utils.cmake:303 (foreach)
+
+  closes on the line
+
+    /home/geray/mindspore-master/cmake/utils.cmake:306 (endforeach)
+
+  with mis-matching arguments.
+Call Stack (most recent call first):
+  cmake/mind_expression.cmake:27 (include)
+  CMakeLists.txt:49 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- The CXX compiler identification is GNU 10.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PythonInterp: /usr/bin/python (found version "3.8.5") 
+-- Found PythonLibs: /usr/lib/libpython3.8.so
+-- Performing Test HAS_CPP14_FLAG
+-- Performing Test HAS_CPP14_FLAG - Success
+-- pybind11 v2.4.3
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_C_FLAGS
+    PYBIND11_LTO_CXX_FLAGS
+
+
+-- Build files have been written to: /home/geray/mindspore-master/cmake-build-debug/_deps/pybind11-src/_build
+Install the project...
+-- Install configuration: ""
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/options.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/chrono.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/detail
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/detail/common.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/detail/internals.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/detail/typeid.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/detail/init.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/detail/class.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/detail/descr.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/complex.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/common.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/pytypes.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/eigen.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/operators.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/functional.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/buffer_info.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/eval.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/embed.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/pybind11.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/stl.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/iostream.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/stl_bind.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/cast.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/numpy.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/include/pybind11/attr.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/share/cmake/pybind11/pybind11Config.cmake
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/share/cmake/pybind11/pybind11ConfigVersion.cmake
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/share/cmake/pybind11/FindPythonLibsNew.cmake
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/share/cmake/pybind11/pybind11Tools.cmake
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/pybind11_9adde7a5a6c172fdeec9638734ff4367/share/cmake/pybind11/pybind11Targets.cmake
+-- Found PythonInterp: /usr/bin/python (found version "3.8.5") 
+-- Found PythonLibs: /usr/lib/libpython3.8.so
+Found pkg: pybind11::pybind11
+go to link flatbuffers
+pkg name:flatbuffers,flatbuffers
+flatbuffers config hash: 45f1388bb81c31b4b939e662fce0be08
+_FIND:/home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08
+download:  , flatbuffers , https://github.com/google/flatbuffers/archive/v1.11.0.tar.gz
+-- Populating flatbuffers
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/geray/mindspore-master/cmake-build-debug/_deps/flatbuffers-subbuild
+Scanning dependencies of target flatbuffers-populate
+[ 11%] Creating directories for 'flatbuffers-populate'
+[ 22%] Performing download step (download, verify and extract) for 'flatbuffers-populate'
+-- Downloading...
+   dst='/home/geray/mindspore-master/cmake-build-debug/_deps/flatbuffers-subbuild/flatbuffers-populate-prefix/src/v1.11.0.tar.gz'
+   timeout='none'
+-- Using src='https://github.com/google/flatbuffers/archive/v1.11.0.tar.gz'
+-- [download 100% complete]
+-- verifying file...
+       file='/home/geray/mindspore-master/cmake-build-debug/_deps/flatbuffers-subbuild/flatbuffers-populate-prefix/src/v1.11.0.tar.gz'
+-- Downloading... done
+-- extracting...
+     src='/home/geray/mindspore-master/cmake-build-debug/_deps/flatbuffers-subbuild/flatbuffers-populate-prefix/src/v1.11.0.tar.gz'
+     dst='/home/geray/mindspore-master/cmake-build-debug/_deps/flatbuffers-src'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 33%] No update step for 'flatbuffers-populate'
+[ 44%] No patch step for 'flatbuffers-populate'
+[ 55%] No configure step for 'flatbuffers-populate'
+[ 66%] No build step for 'flatbuffers-populate'
+[ 77%] No install step for 'flatbuffers-populate'
+[ 88%] No test step for 'flatbuffers-populate'
+[100%] Completed 'flatbuffers-populate'
+[100%] Built target flatbuffers-populate
+flatbuffers_SOURCE_DIR : /home/geray/mindspore-master/cmake-build-debug/_deps/flatbuffers-src
+CMake Warning (dev) at cmake/external_libs/flatbuffers.cmake:6 (mindspore_add_pkg):
+  A logical block opening on the line
+
+    /home/geray/mindspore-master/cmake/utils.cmake:303 (foreach)
+
+  closes on the line
+
+    /home/geray/mindspore-master/cmake/utils.cmake:306 (endforeach)
+
+  with mis-matching arguments.
+Call Stack (most recent call first):
+  cmake/mind_expression.cmake:29 (include)
+  CMakeLists.txt:49 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- The C compiler identification is GNU 10.2.0
+-- The CXX compiler identification is GNU 10.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for strtof_l
+-- Looking for strtof_l - found
+fatal: 不是一个 git 仓库（或者任何父目录）：.git
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/geray/mindspore-master/cmake-build-debug/_deps/flatbuffers-src/_build
+Scanning dependencies of target flathash
+Scanning dependencies of target flatbuffers
+Scanning dependencies of target flatc
+[  3%] Building CXX object CMakeFiles/flathash.dir/src/flathash.cpp.o
+[  6%] Building CXX object CMakeFiles/flatbuffers.dir/src/code_generators.cpp.o
+[  9%] Building CXX object CMakeFiles/flatbuffers.dir/src/idl_gen_text.cpp.o
+[ 12%] Building CXX object CMakeFiles/flatbuffers.dir/src/idl_parser.cpp.o
+[ 15%] Building CXX object CMakeFiles/flatbuffers.dir/src/util.cpp.o
+[ 18%] Building CXX object CMakeFiles/flatbuffers.dir/src/reflection.cpp.o
+[ 21%] Building CXX object CMakeFiles/flatc.dir/src/idl_parser.cpp.o
+[ 25%] Building CXX object CMakeFiles/flatc.dir/src/code_generators.cpp.o
+[ 28%] Linking CXX executable flathash
+[ 28%] Built target flathash
+[ 31%] Building CXX object CMakeFiles/flatc.dir/src/idl_gen_text.cpp.o
+[ 34%] Building CXX object CMakeFiles/flatc.dir/src/reflection.cpp.o
+[ 37%] Building CXX object CMakeFiles/flatc.dir/src/idl_gen_cpp.cpp.o
+[ 40%] Building CXX object CMakeFiles/flatc.dir/src/util.cpp.o
+[ 43%] Building CXX object CMakeFiles/flatc.dir/src/idl_gen_dart.cpp.o
+[ 46%] Building CXX object CMakeFiles/flatc.dir/src/idl_gen_general.cpp.o
+[ 50%] Building CXX object CMakeFiles/flatc.dir/src/idl_gen_go.cpp.o
+[ 53%] Building CXX object CMakeFiles/flatc.dir/src/idl_gen_js_ts.cpp.o
+[ 56%] Building CXX object CMakeFiles/flatc.dir/src/idl_gen_php.cpp.o
+[ 59%] Building CXX object CMakeFiles/flatc.dir/src/idl_gen_python.cpp.o
+[ 62%] Building CXX object CMakeFiles/flatc.dir/src/idl_gen_lobster.cpp.o
+[ 65%] Building CXX object CMakeFiles/flatc.dir/src/idl_gen_lua.cpp.o
+[ 68%] Building CXX object CMakeFiles/flatc.dir/src/idl_gen_rust.cpp.o
+[ 71%] Building CXX object CMakeFiles/flatc.dir/src/idl_gen_fbs.cpp.o
+[ 75%] Building CXX object CMakeFiles/flatc.dir/src/idl_gen_grpc.cpp.o
+[ 78%] Building CXX object CMakeFiles/flatc.dir/src/idl_gen_json_schema.cpp.o
+[ 81%] Building CXX object CMakeFiles/flatc.dir/src/flatc.cpp.o
+[ 84%] Building CXX object CMakeFiles/flatc.dir/src/flatc_main.cpp.o
+[ 87%] Building CXX object CMakeFiles/flatc.dir/grpc/src/compiler/cpp_generator.cc.o
+[ 90%] Building CXX object CMakeFiles/flatc.dir/grpc/src/compiler/go_generator.cc.o
+[ 93%] Building CXX object CMakeFiles/flatc.dir/grpc/src/compiler/java_generator.cc.o
+[ 96%] Linking CXX static library libflatbuffers.a
+[ 96%] Built target flatbuffers
+[100%] Linking CXX executable flatc
+[100%] Built target flatc
+Install the project...
+-- Install configuration: ""
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/include/flatbuffers
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/include/flatbuffers/util.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/include/flatbuffers/code_generators.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/include/flatbuffers/base.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/include/flatbuffers/grpc.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/include/flatbuffers/registry.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/include/flatbuffers/flatbuffers.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/include/flatbuffers/stl_emulation.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/include/flatbuffers/hash.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/include/flatbuffers/reflection_generated.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/include/flatbuffers/flatc.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/include/flatbuffers/reflection.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/include/flatbuffers/minireflect.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/include/flatbuffers/flexbuffers.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/include/flatbuffers/idl.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/lib/cmake/flatbuffers/FlatbuffersConfig.cmake
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/lib/cmake/flatbuffers/FlatbuffersConfigVersion.cmake
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/lib/libflatbuffers.a
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/lib/cmake/flatbuffers/FlatbuffersTargets.cmake
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/lib/cmake/flatbuffers/FlatbuffersTargets-noconfig.cmake
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/bin/flatc
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/lib/cmake/flatbuffers/FlatcTargets.cmake
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/lib/cmake/flatbuffers/FlatcTargets-noconfig.cmake
+_FIND:/home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08
+found /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/bin/flatc
+found /home/geray/mindspore-master/cmake-build-debug/.mslib/flatbuffers_45f1388bb81c31b4b939e662fce0be08/lib/libflatbuffers.a
+-- Found Python3: /usr/bin/python3.8 (found version "3.8.5") found components: Interpreter 
+pkg name:gtest,gtest
+gtest config hash: 18e415510f9591fff95b3135746c1564
+_FIND:/home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564
+download:  , gtest , https://github.com/google/googletest/archive/release-1.8.0.tar.gz
+-- Populating gtest
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-subbuild
+Scanning dependencies of target gtest-populate
+[ 11%] Creating directories for 'gtest-populate'
+[ 22%] Performing download step (download, verify and extract) for 'gtest-populate'
+-- Downloading...
+   dst='/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-subbuild/gtest-populate-prefix/src/release-1.8.0.tar.gz'
+   timeout='none'
+-- Using src='https://github.com/google/googletest/archive/release-1.8.0.tar.gz'
+-- [download 100% complete]
+-- [download 0% complete]
+-- [download 1% complete]
+-- [download 2% complete]
+-- [download 3% complete]
+-- [download 4% complete]
+-- [download 5% complete]
+-- [download 6% complete]
+-- [download 7% complete]
+-- [download 8% complete]
+-- [download 9% complete]
+-- [download 10% complete]
+-- [download 11% complete]
+-- [download 12% complete]
+-- [download 13% complete]
+-- [download 14% complete]
+-- [download 15% complete]
+-- [download 16% complete]
+-- [download 17% complete]
+-- [download 18% complete]
+-- [download 19% complete]
+-- [download 20% complete]
+-- [download 21% complete]
+-- [download 22% complete]
+-- [download 23% complete]
+-- [download 24% complete]
+-- [download 25% complete]
+-- [download 26% complete]
+-- [download 27% complete]
+-- [download 28% complete]
+-- [download 29% complete]
+-- [download 30% complete]
+-- [download 31% complete]
+-- [download 32% complete]
+-- [download 33% complete]
+-- [download 34% complete]
+-- [download 35% complete]
+-- [download 36% complete]
+-- [download 37% complete]
+-- [download 38% complete]
+-- [download 39% complete]
+-- [download 40% complete]
+-- [download 41% complete]
+-- [download 42% complete]
+-- [download 43% complete]
+-- [download 44% complete]
+-- [download 45% complete]
+-- [download 46% complete]
+-- [download 47% complete]
+-- [download 48% complete]
+-- [download 49% complete]
+-- [download 50% complete]
+-- [download 51% complete]
+-- [download 52% complete]
+-- [download 53% complete]
+-- [download 54% complete]
+-- [download 55% complete]
+-- [download 56% complete]
+-- [download 57% complete]
+-- [download 58% complete]
+-- [download 59% complete]
+-- [download 60% complete]
+-- [download 61% complete]
+-- [download 62% complete]
+-- [download 63% complete]
+-- [download 64% complete]
+-- [download 65% complete]
+-- [download 66% complete]
+-- [download 67% complete]
+-- [download 68% complete]
+-- [download 69% complete]
+-- [download 70% complete]
+-- [download 71% complete]
+-- [download 72% complete]
+-- [download 73% complete]
+-- [download 74% complete]
+-- [download 75% complete]
+-- [download 76% complete]
+-- [download 77% complete]
+-- [download 78% complete]
+-- [download 79% complete]
+-- [download 80% complete]
+-- [download 81% complete]
+-- [download 82% complete]
+-- [download 83% complete]
+-- [download 84% complete]
+-- [download 85% complete]
+-- [download 86% complete]
+-- [download 87% complete]
+-- [download 88% complete]
+-- [download 89% complete]
+-- [download 90% complete]
+-- [download 91% complete]
+-- [download 92% complete]
+-- [download 93% complete]
+-- [download 94% complete]
+-- [download 95% complete]
+-- [download 96% complete]
+-- [download 97% complete]
+-- [download 98% complete]
+-- [download 99% complete]
+-- [download 100% complete]
+-- verifying file...
+       file='/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-subbuild/gtest-populate-prefix/src/release-1.8.0.tar.gz'
+-- Downloading... done
+-- extracting...
+     src='/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-subbuild/gtest-populate-prefix/src/release-1.8.0.tar.gz'
+     dst='/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 33%] No update step for 'gtest-populate'
+[ 44%] No patch step for 'gtest-populate'
+[ 55%] No configure step for 'gtest-populate'
+[ 66%] No build step for 'gtest-populate'
+[ 77%] No install step for 'gtest-populate'
+[ 88%] No test step for 'gtest-populate'
+[100%] Completed 'gtest-populate'
+[100%] Built target gtest-populate
+gtest_SOURCE_DIR : /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src
+CMake Warning (dev) at cmake/external_libs/gtest.cmake:3 (mindspore_add_pkg):
+  A logical block opening on the line
+
+    /home/geray/mindspore-master/cmake/utils.cmake:303 (foreach)
+
+  closes on the line
+
+    /home/geray/mindspore-master/cmake/utils.cmake:306 (endforeach)
+
+  with mis-matching arguments.
+Call Stack (most recent call first):
+  cmake/mind_expression.cmake:80 (include)
+  CMakeLists.txt:49 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- The C compiler identification is GNU 10.2.0
+-- The CXX compiler identification is GNU 10.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PythonInterp: /usr/bin/python (found version "3.8.5") 
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_TESTING
+
+
+-- Build files have been written to: /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/_build
+Scanning dependencies of target gtest
+Scanning dependencies of target gmock
+Scanning dependencies of target gmock_main
+[  9%] Building CXX object googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 18%] Building CXX object googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[ 27%] Building CXX object googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o
+[ 36%] Building CXX object googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.o
+[ 45%] Building CXX object googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o
+[ 54%] Building CXX object googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::StrEqualityMatcher<std::basic_string<char> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::StrEqualityMatcher<std::basic_string<char> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:3957:23:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::StrEqualityMatcher<std::basic_string<char> >::StrEqualityMatcher(const testing::internal::StrEqualityMatcher<std::basic_string<char> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::StrEqualityMatcher<std::basic_string<char> >’ has user-provided ‘void testing::internal::StrEqualityMatcher<StringType>::operator=(const testing::internal::StrEqualityMatcher<StringType>&) [with StringType = std::basic_string<char>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1180:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1180 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::HasSubstrMatcher<std::basic_string<char> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::HasSubstrMatcher<std::basic_string<char> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:3986:17:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::HasSubstrMatcher<std::basic_string<char> >::HasSubstrMatcher(const testing::internal::HasSubstrMatcher<std::basic_string<char> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::HasSubstrMatcher<std::basic_string<char> >’ has user-provided ‘void testing::internal::HasSubstrMatcher<StringType>::operator=(const testing::internal::HasSubstrMatcher<StringType>&) [with StringType = std::basic_string<char>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1227:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1227 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::StartsWithMatcher<std::basic_string<char> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::StartsWithMatcher<std::basic_string<char> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:3993:14:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::StartsWithMatcher<std::basic_string<char> >::StartsWithMatcher(const testing::internal::StartsWithMatcher<std::basic_string<char> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::StartsWithMatcher<std::basic_string<char> >’ has user-provided ‘void testing::internal::StartsWithMatcher<StringType>::operator=(const testing::internal::StartsWithMatcher<StringType>&) [with StringType = std::basic_string<char>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1274:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1274 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::EndsWithMatcher<std::basic_string<char> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::EndsWithMatcher<std::basic_string<char> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:4000:14:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::EndsWithMatcher<std::basic_string<char> >::EndsWithMatcher(const testing::internal::EndsWithMatcher<std::basic_string<char> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::EndsWithMatcher<std::basic_string<char> >’ has user-provided ‘void testing::internal::EndsWithMatcher<StringType>::operator=(const testing::internal::EndsWithMatcher<StringType>&) [with StringType = std::basic_string<char>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1320:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1320 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::MatchesRegexMatcher]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::MatchesRegexMatcher]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:4007:75:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::MatchesRegexMatcher::MatchesRegexMatcher(const testing::internal::MatchesRegexMatcher&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::MatchesRegexMatcher’ has user-provided ‘void testing::internal::MatchesRegexMatcher::operator=(const testing::internal::MatchesRegexMatcher&)’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1369:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1369 |   GTEST_DISALLOW_ASSIGN_(MatchesRegexMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::StrEqualityMatcher<std::basic_string<wchar_t> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::StrEqualityMatcher<std::basic_string<wchar_t> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:4032:23:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::StrEqualityMatcher<std::basic_string<wchar_t> >::StrEqualityMatcher(const testing::internal::StrEqualityMatcher<std::basic_string<wchar_t> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::StrEqualityMatcher<std::basic_string<wchar_t> >’ has user-provided ‘void testing::internal::StrEqualityMatcher<StringType>::operator=(const testing::internal::StrEqualityMatcher<StringType>&) [with StringType = std::basic_string<wchar_t>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1180:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1180 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::HasSubstrMatcher<std::basic_string<wchar_t> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::HasSubstrMatcher<std::basic_string<wchar_t> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:4061:17:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::HasSubstrMatcher<std::basic_string<wchar_t> >::HasSubstrMatcher(const testing::internal::HasSubstrMatcher<std::basic_string<wchar_t> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::HasSubstrMatcher<std::basic_string<wchar_t> >’ has user-provided ‘void testing::internal::HasSubstrMatcher<StringType>::operator=(const testing::internal::HasSubstrMatcher<StringType>&) [with StringType = std::basic_string<wchar_t>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1227:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1227 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::StartsWithMatcher<std::basic_string<wchar_t> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::StartsWithMatcher<std::basic_string<wchar_t> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:4068:14:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::StartsWithMatcher<std::basic_string<wchar_t> >::StartsWithMatcher(const testing::internal::StartsWithMatcher<std::basic_string<wchar_t> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::StartsWithMatcher<std::basic_string<wchar_t> >’ has user-provided ‘void testing::internal::StartsWithMatcher<StringType>::operator=(const testing::internal::StartsWithMatcher<StringType>&) [with StringType = std::basic_string<wchar_t>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1274:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1274 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::EndsWithMatcher<std::basic_string<wchar_t> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::EndsWithMatcher<std::basic_string<wchar_t> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:4075:14:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::EndsWithMatcher<std::basic_string<wchar_t> >::EndsWithMatcher(const testing::internal::EndsWithMatcher<std::basic_string<wchar_t> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::EndsWithMatcher<std::basic_string<wchar_t> >’ has user-provided ‘void testing::internal::EndsWithMatcher<StringType>::operator=(const testing::internal::EndsWithMatcher<StringType>&) [with StringType = std::basic_string<wchar_t>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1320:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1320 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock_main.cc:33:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::StrEqualityMatcher<std::basic_string<char> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::StrEqualityMatcher<std::basic_string<char> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:3957:23:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::StrEqualityMatcher<std::basic_string<char> >::StrEqualityMatcher(const testing::internal::StrEqualityMatcher<std::basic_string<char> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock_main.cc:33:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::StrEqualityMatcher<std::basic_string<char> >’ has user-provided ‘void testing::internal::StrEqualityMatcher<StringType>::operator=(const testing::internal::StrEqualityMatcher<StringType>&) [with StringType = std::basic_string<char>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1180:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1180 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock_main.cc:33:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::HasSubstrMatcher<std::basic_string<char> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::HasSubstrMatcher<std::basic_string<char> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:3986:17:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::HasSubstrMatcher<std::basic_string<char> >::HasSubstrMatcher(const testing::internal::HasSubstrMatcher<std::basic_string<char> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock_main.cc:33:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::HasSubstrMatcher<std::basic_string<char> >’ has user-provided ‘void testing::internal::HasSubstrMatcher<StringType>::operator=(const testing::internal::HasSubstrMatcher<StringType>&) [with StringType = std::basic_string<char>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1227:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1227 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock_main.cc:33:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::StartsWithMatcher<std::basic_string<char> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::StartsWithMatcher<std::basic_string<char> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:3993:14:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::StartsWithMatcher<std::basic_string<char> >::StartsWithMatcher(const testing::internal::StartsWithMatcher<std::basic_string<char> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock_main.cc:33:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::StartsWithMatcher<std::basic_string<char> >’ has user-provided ‘void testing::internal::StartsWithMatcher<StringType>::operator=(const testing::internal::StartsWithMatcher<StringType>&) [with StringType = std::basic_string<char>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1274:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1274 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock_main.cc:33:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::EndsWithMatcher<std::basic_string<char> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::EndsWithMatcher<std::basic_string<char> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:4000:14:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::EndsWithMatcher<std::basic_string<char> >::EndsWithMatcher(const testing::internal::EndsWithMatcher<std::basic_string<char> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock_main.cc:33:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::EndsWithMatcher<std::basic_string<char> >’ has user-provided ‘void testing::internal::EndsWithMatcher<StringType>::operator=(const testing::internal::EndsWithMatcher<StringType>&) [with StringType = std::basic_string<char>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1320:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1320 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock_main.cc:33:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::MatchesRegexMatcher]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::MatchesRegexMatcher]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:4007:75:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::MatchesRegexMatcher::MatchesRegexMatcher(const testing::internal::MatchesRegexMatcher&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock_main.cc:33:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::MatchesRegexMatcher’ has user-provided ‘void testing::internal::MatchesRegexMatcher::operator=(const testing::internal::MatchesRegexMatcher&)’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1369:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1369 |   GTEST_DISALLOW_ASSIGN_(MatchesRegexMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock_main.cc:33:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::StrEqualityMatcher<std::basic_string<wchar_t> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::StrEqualityMatcher<std::basic_string<wchar_t> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:4032:23:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::StrEqualityMatcher<std::basic_string<wchar_t> >::StrEqualityMatcher(const testing::internal::StrEqualityMatcher<std::basic_string<wchar_t> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock_main.cc:33:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::StrEqualityMatcher<std::basic_string<wchar_t> >’ has user-provided ‘void testing::internal::StrEqualityMatcher<StringType>::operator=(const testing::internal::StrEqualityMatcher<StringType>&) [with StringType = std::basic_string<wchar_t>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1180:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1180 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock_main.cc:33:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::HasSubstrMatcher<std::basic_string<wchar_t> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::HasSubstrMatcher<std::basic_string<wchar_t> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:4061:17:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::HasSubstrMatcher<std::basic_string<wchar_t> >::HasSubstrMatcher(const testing::internal::HasSubstrMatcher<std::basic_string<wchar_t> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock_main.cc:33:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::HasSubstrMatcher<std::basic_string<wchar_t> >’ has user-provided ‘void testing::internal::HasSubstrMatcher<StringType>::operator=(const testing::internal::HasSubstrMatcher<StringType>&) [with StringType = std::basic_string<wchar_t>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1227:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1227 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock_main.cc:33:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::StartsWithMatcher<std::basic_string<wchar_t> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::StartsWithMatcher<std::basic_string<wchar_t> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:4068:14:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::StartsWithMatcher<std::basic_string<wchar_t> >::StartsWithMatcher(const testing::internal::StartsWithMatcher<std::basic_string<wchar_t> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock_main.cc:33:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::StartsWithMatcher<std::basic_string<wchar_t> >’ has user-provided ‘void testing::internal::StartsWithMatcher<StringType>::operator=(const testing::internal::StartsWithMatcher<StringType>&) [with StringType = std::basic_string<wchar_t>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1274:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1274 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock_main.cc:33:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::EndsWithMatcher<std::basic_string<wchar_t> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::EndsWithMatcher<std::basic_string<wchar_t> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:4075:14:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::EndsWithMatcher<std::basic_string<wchar_t> >::EndsWithMatcher(const testing::internal::EndsWithMatcher<std::basic_string<wchar_t> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock_main.cc:33:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::EndsWithMatcher<std::basic_string<wchar_t> >’ has user-provided ‘void testing::internal::EndsWithMatcher<StringType>::operator=(const testing::internal::EndsWithMatcher<StringType>&) [with StringType = std::basic_string<wchar_t>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1320:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1320 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::StrEqualityMatcher<std::basic_string<char> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::StrEqualityMatcher<std::basic_string<char> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:3957:23:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::StrEqualityMatcher<std::basic_string<char> >::StrEqualityMatcher(const testing::internal::StrEqualityMatcher<std::basic_string<char> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::StrEqualityMatcher<std::basic_string<char> >’ has user-provided ‘void testing::internal::StrEqualityMatcher<StringType>::operator=(const testing::internal::StrEqualityMatcher<StringType>&) [with StringType = std::basic_string<char>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1180:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1180 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::HasSubstrMatcher<std::basic_string<char> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::HasSubstrMatcher<std::basic_string<char> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:3986:17:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::HasSubstrMatcher<std::basic_string<char> >::HasSubstrMatcher(const testing::internal::HasSubstrMatcher<std::basic_string<char> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::HasSubstrMatcher<std::basic_string<char> >’ has user-provided ‘void testing::internal::HasSubstrMatcher<StringType>::operator=(const testing::internal::HasSubstrMatcher<StringType>&) [with StringType = std::basic_string<char>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1227:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1227 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::StartsWithMatcher<std::basic_string<char> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::StartsWithMatcher<std::basic_string<char> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:3993:14:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::StartsWithMatcher<std::basic_string<char> >::StartsWithMatcher(const testing::internal::StartsWithMatcher<std::basic_string<char> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::StartsWithMatcher<std::basic_string<char> >’ has user-provided ‘void testing::internal::StartsWithMatcher<StringType>::operator=(const testing::internal::StartsWithMatcher<StringType>&) [with StringType = std::basic_string<char>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1274:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1274 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::EndsWithMatcher<std::basic_string<char> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::EndsWithMatcher<std::basic_string<char> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:4000:14:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::EndsWithMatcher<std::basic_string<char> >::EndsWithMatcher(const testing::internal::EndsWithMatcher<std::basic_string<char> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::EndsWithMatcher<std::basic_string<char> >’ has user-provided ‘void testing::internal::EndsWithMatcher<StringType>::operator=(const testing::internal::EndsWithMatcher<StringType>&) [with StringType = std::basic_string<char>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1320:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1320 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::MatchesRegexMatcher]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::MatchesRegexMatcher]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:4007:75:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::MatchesRegexMatcher::MatchesRegexMatcher(const testing::internal::MatchesRegexMatcher&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::MatchesRegexMatcher’ has user-provided ‘void testing::internal::MatchesRegexMatcher::operator=(const testing::internal::MatchesRegexMatcher&)’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1369:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1369 |   GTEST_DISALLOW_ASSIGN_(MatchesRegexMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::StrEqualityMatcher<std::basic_string<wchar_t> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::StrEqualityMatcher<std::basic_string<wchar_t> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:4032:23:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::StrEqualityMatcher<std::basic_string<wchar_t> >::StrEqualityMatcher(const testing::internal::StrEqualityMatcher<std::basic_string<wchar_t> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::StrEqualityMatcher<std::basic_string<wchar_t> >’ has user-provided ‘void testing::internal::StrEqualityMatcher<StringType>::operator=(const testing::internal::StrEqualityMatcher<StringType>&) [with StringType = std::basic_string<wchar_t>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1180:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1180 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::HasSubstrMatcher<std::basic_string<wchar_t> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::HasSubstrMatcher<std::basic_string<wchar_t> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:4061:17:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::HasSubstrMatcher<std::basic_string<wchar_t> >::HasSubstrMatcher(const testing::internal::HasSubstrMatcher<std::basic_string<wchar_t> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::HasSubstrMatcher<std::basic_string<wchar_t> >’ has user-provided ‘void testing::internal::HasSubstrMatcher<StringType>::operator=(const testing::internal::HasSubstrMatcher<StringType>&) [with StringType = std::basic_string<wchar_t>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1227:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1227 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::StartsWithMatcher<std::basic_string<wchar_t> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::StartsWithMatcher<std::basic_string<wchar_t> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:4068:14:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::StartsWithMatcher<std::basic_string<wchar_t> >::StartsWithMatcher(const testing::internal::StartsWithMatcher<std::basic_string<wchar_t> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::StartsWithMatcher<std::basic_string<wchar_t> >’ has user-provided ‘void testing::internal::StartsWithMatcher<StringType>::operator=(const testing::internal::StartsWithMatcher<StringType>&) [with StringType = std::basic_string<wchar_t>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1274:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1274 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-spec-builders.h:75,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-generated-function-mockers.h:43,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:61,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h: In instantiation of ‘testing::PolymorphicMatcher<Impl>::PolymorphicMatcher(const Impl&) [with Impl = testing::internal::EndsWithMatcher<std::basic_string<wchar_t> >]’:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:497:10:   required from ‘testing::PolymorphicMatcher<Impl> testing::MakePolymorphicMatcher(const Impl&) [with Impl = testing::internal::EndsWithMatcher<std::basic_string<wchar_t> >]’
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:4075:14:   required from here
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:432:67: 警告：implicitly-declared ‘testing::internal::EndsWithMatcher<std::basic_string<wchar_t> >::EndsWithMatcher(const testing::internal::EndsWithMatcher<std::basic_string<wchar_t> >&)’ is deprecated [-Wdeprecated-copy]
+  432 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}
+      |                                                                   ^
+In file included from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-linked_ptr.h:74,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-port.h:53,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-generated-internal-utils.h:44,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/internal/gmock-internal-utils.h:45,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-actions.h:46,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock.h:58,
+                 from /home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/src/gmock-all.cc:40:
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googletest/include/gtest/internal/gtest-port.h:870:8: 附注：because ‘testing::internal::EndsWithMatcher<std::basic_string<wchar_t> >’ has user-provided ‘void testing::internal::EndsWithMatcher<StringType>::operator=(const testing::internal::EndsWithMatcher<StringType>&) [with StringType = std::basic_string<wchar_t>]’
+  870 |   void operator=(type const &)
+      |        ^~~~~~~~
+/home/geray/mindspore-master/cmake-build-debug/_deps/gtest-src/googlemock/include/gmock/gmock-matchers.h:1320:3: 附注：in expansion of macro ‘GTEST_DISALLOW_ASSIGN_’
+ 1320 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+[ 63%] Linking CXX shared library libgtest.so
+[ 63%] Built target gtest
+[ 72%] Linking CXX shared library libgmock.so
+Scanning dependencies of target gtest_main
+[ 81%] Building CXX object googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 81%] Built target gmock
+[ 90%] Linking CXX shared library libgmock_main.so
+[ 90%] Built target gmock_main
+[100%] Linking CXX shared library libgtest_main.so
+[100%] Built target gtest_main
+Install the project...
+-- Install configuration: ""
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/lib/libgmock.so
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/lib/libgmock_main.so
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/gmock-generated-matchers.h.pump
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/gmock-generated-function-mockers.h.pump
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/gmock-more-actions.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/gmock-more-matchers.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/gmock-generated-matchers.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/gmock-generated-nice-strict.h.pump
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/gmock-generated-actions.h.pump
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/gmock-cardinalities.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/internal
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/internal/gmock-internal-utils.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/internal/custom
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/internal/custom/gmock-generated-actions.h.pump
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/internal/custom/gmock-generated-actions.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/internal/custom/gmock-matchers.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/internal/custom/gmock-port.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/internal/gmock-generated-internal-utils.h.pump
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/internal/gmock-generated-internal-utils.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/internal/gmock-port.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/gmock-generated-nice-strict.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/gmock-generated-function-mockers.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/gmock-generated-actions.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/gmock.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/gmock-matchers.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/gmock-spec-builders.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gmock/gmock-actions.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/lib/libgtest.so
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/lib/libgtest_main.so
+-- Set runtime path of "/home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/lib/libgtest_main.so" to ""
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/gtest_prod.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/gtest-death-test.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/gtest-message.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/gtest-spi.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/gtest-param-test.h.pump
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/gtest-test-part.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/gtest-typed-test.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/gtest.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/internal
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/internal/gtest-string.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/internal/gtest-param-util-generated.h.pump
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/internal/custom
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/internal/custom/gtest.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/internal/custom/gtest-port.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/internal/custom/gtest-printers.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/internal/gtest-death-test-internal.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/internal/gtest-type-util.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/internal/gtest-filepath.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/internal/gtest-internal.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/internal/gtest-type-util.h.pump
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/internal/gtest-param-util.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/internal/gtest-port.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/internal/gtest-linked_ptr.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/internal/gtest-param-util-generated.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/internal/gtest-tuple.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/internal/gtest-port-arch.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/internal/gtest-tuple.h.pump
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/gtest-printers.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/gtest_pred_impl.h
+-- Installing: /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/include/gtest/gtest-param-test.h
+_FIND:/home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564
+found /home/geray/mindspore-master/cmake-build-debug/.mslib/gtest_18e415510f9591fff95b3135746c1564/lib/libgtest.so
+pkg name:ms_onnx,ms_onnx
+ms_onnx config hash: 4f03a8eefe8d8a16c2d953e52c1818d1
+download:  , ms_onnx , https://github.com/onnx/onnx/releases/download/v1.6.0/onnx-1.6.0.tar.gz
+-- Populating ms_onnx
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/geray/mindspore-master/cmake-build-debug/_deps/ms_onnx-subbuild
+Scanning dependencies of target ms_onnx-populate
+[ 11%] Creating directories for 'ms_onnx-populate'
+[ 22%] Performing download step (download, verify and extract) for 'ms_onnx-populate'
+-- Downloading...
+   dst='/home/geray/mindspore-master/cmake-build-debug/_deps/ms_onnx-subbuild/ms_onnx-populate-prefix/src/onnx-1.6.0.tar.gz'
+   timeout='none'
+-- Using src='https://github.com/onnx/onnx/releases/download/v1.6.0/onnx-1.6.0.tar.gz'
+-- [download 0% complete]
+-- [download 100% complete]
+-- [download 0% complete]
+-- [download 1% complete]
+-- [download 2% complete]
+-- [download 3% complete]
+-- [download 4% complete]
+-- [download 5% complete]
+-- [download 6% complete]
+-- [download 7% complete]
+-- [download 8% complete]
+-- [download 9% complete]
+-- [download 10% complete]
+-- [download 11% complete]
+-- [download 12% complete]
+-- [download 13% complete]
+-- [download 14% complete]
+-- [download 15% complete]
+-- [download 16% complete]
+-- [download 17% complete]
+-- [download 18% complete]
+-- [download 19% complete]
+-- [download 20% complete]
+-- [download 21% complete]
+-- [download 22% complete]
+-- [download 23% complete]
+-- [download 24% complete]
+-- [download 25% complete]
+-- [download 26% complete]
+-- [download 27% complete]
+-- [download 28% complete]
+-- [download 29% complete]
+-- [download 30% complete]
+-- [download 31% complete]
+-- [download 32% complete]
+-- [download 33% complete]
+-- [download 34% complete]
+-- [download 35% complete]
+-- [download 36% complete]
+-- [download 37% complete]
+-- [download 38% complete]
+-- [download 39% complete]
+-- [download 40% complete]
+-- [download 41% complete]
+-- [download 42% complete]
+-- [download 43% complete]
+-- [download 44% complete]
+-- [download 45% complete]
+-- [download 46% complete]
+-- [download 47% complete]
+-- [download 48% complete]
+-- [download 49% complete]
+-- [download 50% complete]
+-- [download 51% complete]
+-- [download 52% complete]
+-- [download 53% complete]
+-- [download 54% complete]
+-- [download 55% complete]
+-- [download 56% complete]
+-- [download 57% complete]
+-- [download 58% complete]
+-- [download 59% complete]
+-- [download 60% complete]
+-- [download 61% complete]
+-- [download 62% complete]
+-- [download 63% complete]
+-- [download 64% complete]
+-- [download 65% complete]
+-- [download 66% complete]
+-- [download 67% complete]
+-- [download 68% complete]
+-- [download 69% complete]
+-- [download 70% complete]
+-- [download 71% complete]
+-- [download 72% complete]
+-- [download 73% complete]
+-- [download 74% complete]
+-- [download 75% complete]
+-- [download 76% complete]
+-- [download 77% complete]
+-- [download 78% complete]
+-- [download 79% complete]
+-- [download 80% complete]
+-- [download 81% complete]
+-- [download 82% complete]
+-- [download 83% complete]
+-- [download 84% complete]
+-- [download 85% complete]
+-- [download 86% complete]
+-- [download 87% complete]
+-- [download 88% complete]
+-- [download 89% complete]
+-- [download 90% complete]
+-- [download 91% complete]
+-- [download 92% complete]
+-- [download 93% complete]
+-- [download 94% complete]
+-- [download 95% complete]
+-- [download 96% complete]
+-- [download 97% complete]
+-- [download 98% complete]
+-- [download 99% complete]
+-- [download 100% complete]
+-- verifying file...
+       file='/home/geray/mindspore-master/cmake-build-debug/_deps/ms_onnx-subbuild/ms_onnx-populate-prefix/src/onnx-1.6.0.tar.gz'
+-- Downloading... done
+-- extracting...
+     src='/home/geray/mindspore-master/cmake-build-debug/_deps/ms_onnx-subbuild/ms_onnx-populate-prefix/src/onnx-1.6.0.tar.gz'
+     dst='/home/geray/mindspore-master/cmake-build-debug/_deps/ms_onnx-src'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 33%] No update step for 'ms_onnx-populate'
+[ 44%] No patch step for 'ms_onnx-populate'
+[ 55%] No configure step for 'ms_onnx-populate'
+[ 66%] No build step for 'ms_onnx-populate'
+[ 77%] No install step for 'ms_onnx-populate'
+[ 88%] No test step for 'ms_onnx-populate'
+[100%] Completed 'ms_onnx-populate'
+[100%] Built target ms_onnx-populate
+ms_onnx_SOURCE_DIR : /home/geray/mindspore-master/cmake-build-debug/_deps/ms_onnx-src
+CMake Warning (dev) at cmake/external_libs/onnx.cmake:1 (mindspore_add_pkg):
+  A logical block opening on the line
+
+    /home/geray/mindspore-master/cmake/utils.cmake:303 (foreach)
+
+  closes on the line
+
+    /home/geray/mindspore-master/cmake/utils.cmake:306 (endforeach)
+
+  with mis-matching arguments.
+Call Stack (most recent call first):
+  cmake/mind_expression.cmake:81 (include)
+  CMakeLists.txt:49 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Python3: /usr/bin/python3.8 (found suitable version "3.8.5", minimum required is "3.7") found components: Interpreter Development Development.Module Development.Embed 
+PYTHON_INCLUDE_DIRS = /usr/include/python3.8
+PYTHON_LIBRARIES = /usr/lib/libpython3.8.so
+onnx proto path is :/home/geray/mindspore-master/cmake-build-debug/proto/onnx.proto
+CMake Warning (dev) at mindspore/ccsrc/runtime/device/CMakeLists.txt:17:
+  Syntax Warning in cmake code at column 59
+
+  Argument not separated from preceding token by whitespace.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at mindspore/ccsrc/runtime/device/CMakeLists.txt:22:
+  Syntax Warning in cmake code at column 64
+
+  Argument not separated from preceding token by whitespace.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- operation system is Linux-5.8.6-1-MANJARO
+add protobuf lib to c_expression
+************build core***************
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/geray/mindspore-master/cmake-build-debug

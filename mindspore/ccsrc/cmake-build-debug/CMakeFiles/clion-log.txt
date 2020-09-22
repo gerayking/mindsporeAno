@@ -1,0 +1,35 @@
+"E:\codeIDEA\Clion\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/mingw32-make.exe" "-DCMAKE_C_COMPILER=C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/gcc.exe" "-DCMAKE_CXX_COMPILER=C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/g++.exe" -G "CodeBlocks - MinGW Makefiles" D:\Mindspore\mindspore-master\mindspore\ccsrc
+CMake Warning (dev) in CMakeLists.txt:
+  No project() command is present.  The top-level CMakeLists.txt file must
+  contain a literal, direct call to the project() command.  Add a line of
+  code such as
+
+    project(ProjectName)
+
+  near the top of the file, but after cmake_minimum_required().
+
+  CMake is pretending there is a "project(Project)" command on the first
+  line.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Error at CMakeLists.txt:69 (file):
+  file COPY cannot find "/onnx/onnx.proto": No such file or directory.
+
+
+onnx proto path is :
+CMake Error at CMakeLists.txt:72 (ms_protobuf_generate):
+  Unknown CMake command "ms_protobuf_generate".
+
+
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as
+
+    cmake_minimum_required(VERSION 3.16)
+
+  should be added at the top of the file.  The version specified may be lower
+  if you wish to support older CMake versions for this project.  For more
+  information run "cmake --help-policy CMP0000".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring incomplete, errors occurred!
+See also "D:/Mindspore/mindspore-master/mindspore/ccsrc/cmake-build-debug/CMakeFiles/CMakeOutput.log".

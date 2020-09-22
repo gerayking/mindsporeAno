@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/eigen3-subbuild/CMakeFiles/eigen3-populate"
+		},
+		{
+			"file" : "D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/eigen3-subbuild/CMakeFiles/eigen3-populate.rule"
+		},
+		{
+			"file" : "D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/eigen3-subbuild/CMakeFiles/eigen3-populate-complete.rule"
+		},
+		{
+			"file" : "D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/eigen3-subbuild/eigen3-populate-prefix/src/eigen3-populate-stamp/eigen3-populate-install.rule"
+		},
+		{
+			"file" : "D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/eigen3-subbuild/eigen3-populate-prefix/src/eigen3-populate-stamp/eigen3-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/eigen3-subbuild/eigen3-populate-prefix/src/eigen3-populate-stamp/eigen3-populate-download.rule"
+		},
+		{
+			"file" : "D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/eigen3-subbuild/eigen3-populate-prefix/src/eigen3-populate-stamp/eigen3-populate-update.rule"
+		},
+		{
+			"file" : "D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/eigen3-subbuild/eigen3-populate-prefix/src/eigen3-populate-stamp/eigen3-populate-patch.rule"
+		},
+		{
+			"file" : "D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/eigen3-subbuild/eigen3-populate-prefix/src/eigen3-populate-stamp/eigen3-populate-configure.rule"
+		},
+		{
+			"file" : "D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/eigen3-subbuild/eigen3-populate-prefix/src/eigen3-populate-stamp/eigen3-populate-build.rule"
+		},
+		{
+			"file" : "D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/eigen3-subbuild/eigen3-populate-prefix/src/eigen3-populate-stamp/eigen3-populate-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"eigen3-populate"
+		],
+		"name" : "eigen3-populate"
+	}
+}

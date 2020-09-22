@@ -1,0 +1,20 @@
+Performing C++ SOURCE FILE Test EIGEN_COMPILER_SUPPORT_CPP11 failed with the following output:
+Change Dir: D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~2/MICROS~1/2019/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_a15f2 
+[1/2] Building CXX object CMakeFiles\cmTC_a15f2.dir\src.cxx.obj
+cl: 命令行 warning D9002 :忽略未知选项“-std=c++11”
+[2/2] Linking CXX executable cmTC_a15f2.exe
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 failed with the following output:
+Change Dir: D:/Mindspore/mindspore-master/out/build/x64-Debug/_deps/eigen3-src/_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~2/MICROS~1/2019/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_75283 
+[1/2] Building CXX object CMakeFiles\cmTC_75283.dir\src.cxx.obj
+cl: 命令行 warning D9002 :忽略未知选项“-std=c++03”
+[2/2] Linking CXX executable cmTC_75283.exe
+
+Source file was:
+int main() { return 0; }

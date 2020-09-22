@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="_mindspore_pipeline_jit_obj">
+				<Option output="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/CMakeFiles/_mindspore_pipeline_jit_obj.dir/_mindspore_pipeline_jit_obj.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"/>
+					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include"/>
+					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include"/>
+					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 _mindspore_pipeline_jit_obj"/>
+					<CompileFile command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="_mindspore_pipeline_jit_obj/fast">
+				<Option output="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/CMakeFiles/_mindspore_pipeline_jit_obj.dir/_mindspore_pipeline_jit_obj.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"/>
+					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include"/>
+					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include"/>
+					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 _mindspore_pipeline_jit_obj/fast"/>
+					<CompileFile command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/action.cc">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/action.h">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/parse/data_converter.cc">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/parse/data_converter.h">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/parse/function_block.cc">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/parse/function_block.h">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/parse/parse.cc">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/parse/parse.h">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/parse/python_adapter.cc">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/parse/python_adapter.h">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/parse/resolve.cc">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/parse/resolve.h">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/pass.cc">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/pass.h">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/pipeline.cc">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/pipeline.h">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/remove_value_node_dup.cc">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/remove_value_node_dup.h">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/resource.cc">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/resource.h">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/static_analysis/evaluator.cc">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/static_analysis/evaluator.h">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/static_analysis/prim.cc">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/static_analysis/prim.h">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/static_analysis/program_specialize.cc">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/static_analysis/program_specialize.h">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/static_analysis/static_analysis.cc">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/static_analysis/static_analysis.h">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/validator.cc">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/validator.h">
+			<Option target="_mindspore_pipeline_jit_obj"/>
+		</Unit>
+		<Unit filename="D:/Mindspore/mindspore-master/mindspore/ccsrc/pipeline/jit/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

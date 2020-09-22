@@ -1,0 +1,1554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6171C026-3CA9-3B2E-9731-C991AE0CC1B9}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc;D:\Mindspore\mindspore-master\build\_deps\eigen3-src;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc;D:\Mindspore\mindspore-master\build\_deps\eigen3-src;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc;D:\Mindspore\mindspore-master\build\_deps\eigen3-src;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc;D:\Mindspore\mindspore-master\build\_deps\eigen3-src;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Mindspore/mindspore-master/build/_deps/eigen3-src/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/Mindspore/mindspore-master/build/_deps/eigen3-src -BD:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build --check-stamp-file D:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\Doxyfile.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_footer.html.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_header.html.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_layout.xml.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Mindspore/mindspore-master/build/_deps/eigen3-src/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/Mindspore/mindspore-master/build/_deps/eigen3-src -BD:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build --check-stamp-file D:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\Doxyfile.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_footer.html.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_header.html.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_layout.xml.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Mindspore/mindspore-master/build/_deps/eigen3-src/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/Mindspore/mindspore-master/build/_deps/eigen3-src -BD:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build --check-stamp-file D:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\Doxyfile.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_footer.html.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_header.html.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_layout.xml.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Mindspore/mindspore-master/build/_deps/eigen3-src/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/Mindspore/mindspore-master/build/_deps/eigen3-src -BD:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build --check-stamp-file D:/Mindspore/mindspore-master/build/_deps/eigen3-src/_build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\Doxyfile.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_footer.html.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_header.html.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\doc\eigendoxy_layout.xml.in;D:\Mindspore\mindspore-master\build\_deps\eigen3-src\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\ZERO_CHECK.vcxproj">
+      <Project>{380EE55D-FFA2-36E2-8215-F1DBCB56DFD9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\CustomizingEigen_Inheritance.vcxproj">
+      <Project>{244F5E9B-A878-3F72-87DC-99282ED4442C}</Project>
+      <Name>CustomizingEigen_Inheritance</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Cwise_erf.vcxproj">
+      <Project>{1D3E7624-40CE-3829-86D1-F1E21DC7B120}</Project>
+      <Name>Cwise_erf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Cwise_erfc.vcxproj">
+      <Project>{B53DF178-F486-3ACB-889B-4A2EBCBF31D1}</Project>
+      <Name>Cwise_erfc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Cwise_lgamma.vcxproj">
+      <Project>{BEF2C386-5760-3846-98B8-5BE4689FD5A9}</Project>
+      <Name>Cwise_lgamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\DenseBase_middleCols_int.vcxproj">
+      <Project>{C22387D0-EBB3-39D7-835B-99556ACD0925}</Project>
+      <Name>DenseBase_middleCols_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\DenseBase_middleRows_int.vcxproj">
+      <Project>{15343413-6AD2-3031-9971-243D93D0A736}</Project>
+      <Name>DenseBase_middleRows_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\DenseBase_template_int_middleCols.vcxproj">
+      <Project>{79E4FB16-EEF4-3B48-89D9-BAAC94599961}</Project>
+      <Name>DenseBase_template_int_middleCols</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\DenseBase_template_int_middleRows.vcxproj">
+      <Project>{610F1024-07F2-3EB8-9B17-40760A2C6203}</Project>
+      <Name>DenseBase_template_int_middleRows</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\QuickStart_example.vcxproj">
+      <Project>{E944AF94-364D-3B79-A08A-88C451BBF16B}</Project>
+      <Name>QuickStart_example</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\QuickStart_example2_dynamic.vcxproj">
+      <Project>{58209F4D-6F72-34B5-8F8C-EA4ED98E8A31}</Project>
+      <Name>QuickStart_example2_dynamic</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\QuickStart_example2_fixed.vcxproj">
+      <Project>{E0927106-D8A3-3E3B-BA58-725D8203E19F}</Project>
+      <Name>QuickStart_example2_fixed</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TemplateKeyword_flexible.vcxproj">
+      <Project>{F56F08D9-7D2A-3389-8071-950B48D7F5BC}</Project>
+      <Name>TemplateKeyword_flexible</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TemplateKeyword_simple.vcxproj">
+      <Project>{F8279766-E568-3CFA-AE63-910B6B3A993B}</Project>
+      <Name>TemplateKeyword_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialInplaceLU.vcxproj">
+      <Project>{26C3FCE1-DBFE-3B29-A69E-BDADE1C92230}</Project>
+      <Name>TutorialInplaceLU</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialLinAlgComputeTwice.vcxproj">
+      <Project>{EEB3A227-CD1B-3FC4-9FE7-0F81534232DA}</Project>
+      <Name>TutorialLinAlgComputeTwice</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialLinAlgExComputeSolveError.vcxproj">
+      <Project>{23DE00E4-13C6-317C-B50D-9A3929C7C9F5}</Project>
+      <Name>TutorialLinAlgExComputeSolveError</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialLinAlgExSolveColPivHouseholderQR.vcxproj">
+      <Project>{CC632BA8-CBE0-37D7-A87E-7E9BA9AE0F3A}</Project>
+      <Name>TutorialLinAlgExSolveColPivHouseholderQR</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialLinAlgExSolveLDLT.vcxproj">
+      <Project>{FC8E6358-FC32-3FFD-956C-29BE5C279CF2}</Project>
+      <Name>TutorialLinAlgExSolveLDLT</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialLinAlgInverseDeterminant.vcxproj">
+      <Project>{4B31CDC3-CDAD-375A-B26E-AB4BCAD7F3DE}</Project>
+      <Name>TutorialLinAlgInverseDeterminant</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialLinAlgRankRevealing.vcxproj">
+      <Project>{52E50041-26DA-3F39-A939-F8A1EE65F33F}</Project>
+      <Name>TutorialLinAlgRankRevealing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialLinAlgSVDSolve.vcxproj">
+      <Project>{82453661-11A8-38B2-BB16-6688A27837C4}</Project>
+      <Name>TutorialLinAlgSVDSolve</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialLinAlgSelfAdjointEigenSolver.vcxproj">
+      <Project>{D2C741EA-7A07-3324-8F72-AF7E63B79D5D}</Project>
+      <Name>TutorialLinAlgSelfAdjointEigenSolver</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\TutorialLinAlgSetThreshold.vcxproj">
+      <Project>{AB19F7A1-F535-37EF-A482-4B745E213C02}</Project>
+      <Name>TutorialLinAlgSetThreshold</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ArrayClass_accessors.vcxproj">
+      <Project>{201E0823-84A7-3B60-B08E-2B99F2070E7C}</Project>
+      <Name>Tutorial_ArrayClass_accessors</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ArrayClass_addition.vcxproj">
+      <Project>{58996F48-CEA1-368E-B955-DD18DC1EBF64}</Project>
+      <Name>Tutorial_ArrayClass_addition</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ArrayClass_cwise_other.vcxproj">
+      <Project>{3C858FA1-19AC-3C88-A427-A68F81598AFB}</Project>
+      <Name>Tutorial_ArrayClass_cwise_other</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ArrayClass_interop.vcxproj">
+      <Project>{5469347D-A0A4-31DC-915B-D2A05009B601}</Project>
+      <Name>Tutorial_ArrayClass_interop</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ArrayClass_interop_matrix.vcxproj">
+      <Project>{F4E666AB-E3F6-3901-9C7F-1126145C3004}</Project>
+      <Name>Tutorial_ArrayClass_interop_matrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ArrayClass_mult.vcxproj">
+      <Project>{855954C1-0F82-3FC1-B2CF-E340153DD148}</Project>
+      <Name>Tutorial_ArrayClass_mult</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_BlockOperations_block_assignment.vcxproj">
+      <Project>{A964C58F-76A4-3A08-AD15-1A50B4EE1D25}</Project>
+      <Name>Tutorial_BlockOperations_block_assignment</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_BlockOperations_colrow.vcxproj">
+      <Project>{85C8D77A-1F48-3005-817C-694E4A6BD5A6}</Project>
+      <Name>Tutorial_BlockOperations_colrow</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_BlockOperations_corner.vcxproj">
+      <Project>{386065D0-9C08-3E74-86EE-7A5E1157BDD6}</Project>
+      <Name>Tutorial_BlockOperations_corner</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_BlockOperations_print_block.vcxproj">
+      <Project>{8B7FA26C-4E8F-3F21-A9D7-B8C728DD5A6E}</Project>
+      <Name>Tutorial_BlockOperations_print_block</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_BlockOperations_vector.vcxproj">
+      <Project>{F7A3595C-3AC1-3843-86E1-D47E7185E7D7}</Project>
+      <Name>Tutorial_BlockOperations_vector</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_PartialLU_solve.vcxproj">
+      <Project>{6F5A7F42-2B2E-3BC9-B477-634DD3A95601}</Project>
+      <Name>Tutorial_PartialLU_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_1nn.vcxproj">
+      <Project>{020A12A3-A4A9-3940-AC6D-6D317187AF0B}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_1nn</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple.vcxproj">
+      <Project>{5EC671E7-F282-3951-A597-730666994FCA}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple_rowwise.vcxproj">
+      <Project>{48027EA1-B89C-3FD0-9656-2C7599C8500B}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple_rowwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_colwise.vcxproj">
+      <Project>{18675B1A-B45A-3530-832F-C1CE442288A2}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_colwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_maxnorm.vcxproj">
+      <Project>{3B7910EB-4C8A-39FE-A2BB-76EE51EB1833}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_maxnorm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_bool.vcxproj">
+      <Project>{AE5F1185-FE09-3C6A-951D-458C82E66CBE}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_bool</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_norm.vcxproj">
+      <Project>{EC7D077F-F529-3E96-933D-F86A1FED8E51}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_norm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_operatornorm.vcxproj">
+      <Project>{9A6ADB27-2204-3B53-86E3-D088952BD8D1}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_operatornorm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_rowwise.vcxproj">
+      <Project>{A4815C0F-0D0D-3590-989D-911E78CC9E4F}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_rowwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_visitors.vcxproj">
+      <Project>{6B75DEBF-4EEF-3E34-98C0-CDEF79F71830}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_visitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_simple_example_dynamic_size.vcxproj">
+      <Project>{11217F8F-7CA9-3547-B2B4-EC621984CC60}</Project>
+      <Name>Tutorial_simple_example_dynamic_size</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\Tutorial_simple_example_fixed_size.vcxproj">
+      <Project>{9559C60C-0FB0-33DC-8819-7319488C3E32}</Project>
+      <Name>Tutorial_simple_example_fixed_size</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\class_Block.vcxproj">
+      <Project>{0BA9172E-A33C-38F6-861D-DDAA74800BC7}</Project>
+      <Name>class_Block</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\class_CwiseBinaryOp.vcxproj">
+      <Project>{B38B37BF-F07F-3F8A-9EB2-FEA3DBFCA5D9}</Project>
+      <Name>class_CwiseBinaryOp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\class_CwiseUnaryOp.vcxproj">
+      <Project>{9993CE90-F6B4-30A7-A88E-D1656C34F950}</Project>
+      <Name>class_CwiseUnaryOp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\class_CwiseUnaryOp_ptrfun.vcxproj">
+      <Project>{CEBB9C33-2538-3EFB-87ED-80F104D5DB1C}</Project>
+      <Name>class_CwiseUnaryOp_ptrfun</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\class_FixedBlock.vcxproj">
+      <Project>{BCBA1A31-0C26-3B73-BE6D-79EB580E86A8}</Project>
+      <Name>class_FixedBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\class_FixedVectorBlock.vcxproj">
+      <Project>{5ED72205-620F-3589-A065-E4947D35C0FD}</Project>
+      <Name>class_FixedVectorBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\class_VectorBlock.vcxproj">
+      <Project>{56E7A132-C223-3104-A4FE-9699A6081724}</Project>
+      <Name>class_VectorBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_AngleAxis_mimic_euler.vcxproj">
+      <Project>{68124228-C253-33FA-9F01-77680045D14F}</Project>
+      <Name>compile_AngleAxis_mimic_euler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_BiCGSTAB_simple.vcxproj">
+      <Project>{C42AA438-1C43-343F-93E8-DF35D88DD146}</Project>
+      <Name>compile_BiCGSTAB_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_BiCGSTAB_step_by_step.vcxproj">
+      <Project>{7902A34C-24E5-3BA7-8B1C-6267BD9F3BCD}</Project>
+      <Name>compile_BiCGSTAB_step_by_step</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_ColPivHouseholderQR_solve.vcxproj">
+      <Project>{57C76282-F2F6-3137-804D-B52CA2EC0476}</Project>
+      <Name>compile_ColPivHouseholderQR_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_ComplexEigenSolver_compute.vcxproj">
+      <Project>{F7924636-7D03-339F-9AE0-2558F0B6F265}</Project>
+      <Name>compile_ComplexEigenSolver_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_ComplexEigenSolver_eigenvalues.vcxproj">
+      <Project>{E2AC7CF7-8A7F-326A-95F6-50FC880C3EA1}</Project>
+      <Name>compile_ComplexEigenSolver_eigenvalues</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_ComplexEigenSolver_eigenvectors.vcxproj">
+      <Project>{02FDE7B4-2FE5-3382-952A-01D397BEF673}</Project>
+      <Name>compile_ComplexEigenSolver_eigenvectors</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_ComplexSchur_compute.vcxproj">
+      <Project>{E53C5D01-298A-30AC-8C10-CE85DEFEF28D}</Project>
+      <Name>compile_ComplexSchur_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_ComplexSchur_matrixT.vcxproj">
+      <Project>{6455D42D-B8F3-3442-89C6-664BB7EAC50D}</Project>
+      <Name>compile_ComplexSchur_matrixT</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_ComplexSchur_matrixU.vcxproj">
+      <Project>{B6715025-1E84-3B5F-A039-FA97B4C76C31}</Project>
+      <Name>compile_ComplexSchur_matrixU</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_abs.vcxproj">
+      <Project>{89A79061-DA35-3EA8-9754-1B486E1F8676}</Project>
+      <Name>compile_Cwise_abs</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_abs2.vcxproj">
+      <Project>{475773F3-6444-3415-8EE5-493EC2738C30}</Project>
+      <Name>compile_Cwise_abs2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_acos.vcxproj">
+      <Project>{FE05F495-E282-3542-ACC4-2232AA5D2270}</Project>
+      <Name>compile_Cwise_acos</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_arg.vcxproj">
+      <Project>{FEF48180-C120-3E64-9F2D-7D67C593B058}</Project>
+      <Name>compile_Cwise_arg</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_array_power_array.vcxproj">
+      <Project>{1C0180B8-6814-3AED-8F8F-EAAF218D508E}</Project>
+      <Name>compile_Cwise_array_power_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_asin.vcxproj">
+      <Project>{34752C9B-CB1B-30D4-926B-AF35EADBE1EF}</Project>
+      <Name>compile_Cwise_asin</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_atan.vcxproj">
+      <Project>{3F88A9B3-3DC0-3C15-8473-7D50AA8E62C0}</Project>
+      <Name>compile_Cwise_atan</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_boolean_and.vcxproj">
+      <Project>{B57710B2-0189-30AA-A517-F8D422B41A01}</Project>
+      <Name>compile_Cwise_boolean_and</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_boolean_not.vcxproj">
+      <Project>{D4C208DE-470D-3E91-8355-40BAB1051A3D}</Project>
+      <Name>compile_Cwise_boolean_not</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_boolean_or.vcxproj">
+      <Project>{20D26B2B-6ADE-392F-B04D-DF4E7A127EE4}</Project>
+      <Name>compile_Cwise_boolean_or</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_boolean_xor.vcxproj">
+      <Project>{F96C69A7-E768-3C3B-8D64-52BE58F759F3}</Project>
+      <Name>compile_Cwise_boolean_xor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_ceil.vcxproj">
+      <Project>{689A9859-B3C7-3AA1-B4A7-970CBCF31B77}</Project>
+      <Name>compile_Cwise_ceil</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_cos.vcxproj">
+      <Project>{8EB3DF0D-2702-35D1-8694-E55E6983CEC4}</Project>
+      <Name>compile_Cwise_cos</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_cosh.vcxproj">
+      <Project>{73C742EC-CB84-34C0-8AC4-6B2BB4808710}</Project>
+      <Name>compile_Cwise_cosh</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_cube.vcxproj">
+      <Project>{FDF2BDD8-C065-3263-9759-6D374852957F}</Project>
+      <Name>compile_Cwise_cube</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_equal_equal.vcxproj">
+      <Project>{9D542E5C-E7DA-30CD-B775-4273C892EC7A}</Project>
+      <Name>compile_Cwise_equal_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_exp.vcxproj">
+      <Project>{8E1123D1-C015-3321-97EB-3E695CF04373}</Project>
+      <Name>compile_Cwise_exp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_floor.vcxproj">
+      <Project>{140F8552-65C8-3913-BEA6-4E19FAC4AA99}</Project>
+      <Name>compile_Cwise_floor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_greater.vcxproj">
+      <Project>{58DEDBF8-41B5-3618-87D2-29CAF83260D8}</Project>
+      <Name>compile_Cwise_greater</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_greater_equal.vcxproj">
+      <Project>{256F13F5-F18D-3431-B46D-8DE173816A36}</Project>
+      <Name>compile_Cwise_greater_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_inverse.vcxproj">
+      <Project>{699DFC02-8945-3513-A8EE-DBC83FFCAA7C}</Project>
+      <Name>compile_Cwise_inverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_isFinite.vcxproj">
+      <Project>{8688EAED-8A0B-32CB-830B-7A100E7D0726}</Project>
+      <Name>compile_Cwise_isFinite</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_isInf.vcxproj">
+      <Project>{EB6152F5-6440-3528-A3E3-FD95F67FB3D4}</Project>
+      <Name>compile_Cwise_isInf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_isNaN.vcxproj">
+      <Project>{68264E76-B1D1-3683-9B9C-AC20EBEF438F}</Project>
+      <Name>compile_Cwise_isNaN</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_less.vcxproj">
+      <Project>{95642FC0-4810-3C4A-A4F5-3941D8D32DCE}</Project>
+      <Name>compile_Cwise_less</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_less_equal.vcxproj">
+      <Project>{3C62F94E-D16D-3E0F-A0E2-9BFABB510437}</Project>
+      <Name>compile_Cwise_less_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_log.vcxproj">
+      <Project>{51EAC59B-D769-3794-9381-45A70E9651B7}</Project>
+      <Name>compile_Cwise_log</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_log10.vcxproj">
+      <Project>{B4F53966-1295-3861-B107-4D11FCD82020}</Project>
+      <Name>compile_Cwise_log10</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_max.vcxproj">
+      <Project>{6DF40D01-24DF-3560-BE83-6C160C59EB04}</Project>
+      <Name>compile_Cwise_max</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_min.vcxproj">
+      <Project>{CD1A393F-220C-320F-8CC8-400E3F8839E2}</Project>
+      <Name>compile_Cwise_min</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_minus.vcxproj">
+      <Project>{C8EC81F0-1F03-34D3-AB7D-45295C43D04F}</Project>
+      <Name>compile_Cwise_minus</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_minus_equal.vcxproj">
+      <Project>{C10946EE-9660-36AF-BE24-04DF8C792491}</Project>
+      <Name>compile_Cwise_minus_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_not_equal.vcxproj">
+      <Project>{F6AB20E3-9781-3B10-823E-D961389731C5}</Project>
+      <Name>compile_Cwise_not_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_plus.vcxproj">
+      <Project>{69AF450D-62AB-3ADC-B97A-4EEB1C6C20F2}</Project>
+      <Name>compile_Cwise_plus</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_plus_equal.vcxproj">
+      <Project>{8F14E6B8-B324-3365-BC87-3547FD122AB8}</Project>
+      <Name>compile_Cwise_plus_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_pow.vcxproj">
+      <Project>{B3F1AD67-331B-3113-85D0-77AE1AAF56F6}</Project>
+      <Name>compile_Cwise_pow</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_product.vcxproj">
+      <Project>{12FA47E8-5A98-36E1-9E79-7027A74E7EE8}</Project>
+      <Name>compile_Cwise_product</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_quotient.vcxproj">
+      <Project>{E66CE535-92DA-3712-872B-842C4B8E3A25}</Project>
+      <Name>compile_Cwise_quotient</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_round.vcxproj">
+      <Project>{3208D344-9F91-31B5-9560-F654AC1B5B1A}</Project>
+      <Name>compile_Cwise_round</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_scalar_power_array.vcxproj">
+      <Project>{C4E32B9B-E236-359C-A671-78A55626D955}</Project>
+      <Name>compile_Cwise_scalar_power_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_sign.vcxproj">
+      <Project>{526E1B17-3F1A-3084-8871-9719EA27CC00}</Project>
+      <Name>compile_Cwise_sign</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_sin.vcxproj">
+      <Project>{8FED2E2D-C17E-3427-80CE-43924591121E}</Project>
+      <Name>compile_Cwise_sin</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_sinh.vcxproj">
+      <Project>{0C4692FD-0962-3415-A59D-CA54540D970C}</Project>
+      <Name>compile_Cwise_sinh</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_slash_equal.vcxproj">
+      <Project>{19CBE6ED-02B4-3693-9874-A00458661E65}</Project>
+      <Name>compile_Cwise_slash_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_sqrt.vcxproj">
+      <Project>{BD35452A-6125-344F-96C2-09D27AB78E96}</Project>
+      <Name>compile_Cwise_sqrt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_square.vcxproj">
+      <Project>{6B7061AF-276C-3FA3-8FBC-BEE9AC4E67D6}</Project>
+      <Name>compile_Cwise_square</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_tan.vcxproj">
+      <Project>{45C5AEC9-A4B9-3D23-96AA-731ACBDE4B66}</Project>
+      <Name>compile_Cwise_tan</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_tanh.vcxproj">
+      <Project>{9C8AD25A-4288-392D-95C3-EDAC061B5586}</Project>
+      <Name>compile_Cwise_tanh</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Cwise_times_equal.vcxproj">
+      <Project>{43B1C7AB-B23F-3699-A7F5-84B66462C5F8}</Project>
+      <Name>compile_Cwise_times_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_DenseBase_LinSpaced.vcxproj">
+      <Project>{549A7857-16EE-3EE4-A331-FD787BC9050D}</Project>
+      <Name>compile_DenseBase_LinSpaced</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_DenseBase_LinSpacedInt.vcxproj">
+      <Project>{109AD547-2EC2-3DF1-8DA9-E327C04400FB}</Project>
+      <Name>compile_DenseBase_LinSpacedInt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_DenseBase_LinSpaced_seq.vcxproj">
+      <Project>{3B4345A9-A30B-380A-B646-A05DC71F986A}</Project>
+      <Name>compile_DenseBase_LinSpaced_seq</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_DenseBase_setLinSpaced.vcxproj">
+      <Project>{F198FDA0-24FC-3D65-B504-DADE49A8CB9D}</Project>
+      <Name>compile_DenseBase_setLinSpaced</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_DirectionWise_hnormalized.vcxproj">
+      <Project>{7AEA8D30-4260-3702-BB3D-B13B2AEC41F3}</Project>
+      <Name>compile_DirectionWise_hnormalized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_DirectionWise_replicate.vcxproj">
+      <Project>{3C423DA4-A4CA-3134-BB65-25C6BF5D4519}</Project>
+      <Name>compile_DirectionWise_replicate</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_DirectionWise_replicate_int.vcxproj">
+      <Project>{A0413ED8-3F4D-3277-854E-596A053F56C2}</Project>
+      <Name>compile_DirectionWise_replicate_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_EigenSolver_EigenSolver_MatrixType.vcxproj">
+      <Project>{73F15F45-E585-3231-A392-536009FAFE25}</Project>
+      <Name>compile_EigenSolver_EigenSolver_MatrixType</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_EigenSolver_compute.vcxproj">
+      <Project>{77B08FC0-EEFE-30CA-811A-B9C2163F5A62}</Project>
+      <Name>compile_EigenSolver_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_EigenSolver_eigenvalues.vcxproj">
+      <Project>{CC9D61E8-694C-333F-9C3A-E967D3F1402D}</Project>
+      <Name>compile_EigenSolver_eigenvalues</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_EigenSolver_eigenvectors.vcxproj">
+      <Project>{89E40F11-EB3F-3765-B5E6-B174C5577048}</Project>
+      <Name>compile_EigenSolver_eigenvectors</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_EigenSolver_pseudoEigenvectors.vcxproj">
+      <Project>{BA7CC805-326A-3D29-884D-9900D4B16552}</Project>
+      <Name>compile_EigenSolver_pseudoEigenvectors</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_FullPivHouseholderQR_solve.vcxproj">
+      <Project>{9C7ABCDD-CA95-3389-92D7-382C5FC90005}</Project>
+      <Name>compile_FullPivHouseholderQR_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_FullPivLU_image.vcxproj">
+      <Project>{C5228233-9B17-3785-A83C-B9C3C2BA575D}</Project>
+      <Name>compile_FullPivLU_image</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_FullPivLU_kernel.vcxproj">
+      <Project>{63B82743-24EC-3203-8868-915A42B25E19}</Project>
+      <Name>compile_FullPivLU_kernel</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_FullPivLU_solve.vcxproj">
+      <Project>{A6D90A80-FD52-3BF6-8D23-91250B8D7FA2}</Project>
+      <Name>compile_FullPivLU_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_GeneralizedEigenSolver.vcxproj">
+      <Project>{64810E3A-C2C4-3C84-BB6F-9885EA298B59}</Project>
+      <Name>compile_GeneralizedEigenSolver</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_HessenbergDecomposition_compute.vcxproj">
+      <Project>{7CAB480D-6FB7-33D2-AA7A-7B2C8A09F4EE}</Project>
+      <Name>compile_HessenbergDecomposition_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_HessenbergDecomposition_matrixH.vcxproj">
+      <Project>{5868216F-49F1-3FE9-831F-387D066A9618}</Project>
+      <Name>compile_HessenbergDecomposition_matrixH</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_HessenbergDecomposition_packedMatrix.vcxproj">
+      <Project>{019A9CD5-DD62-3E4A-B933-3EA7D0C0782B}</Project>
+      <Name>compile_HessenbergDecomposition_packedMatrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_HouseholderQR_householderQ.vcxproj">
+      <Project>{A1F1FB5D-498C-345E-94E6-4C89F6D2A27B}</Project>
+      <Name>compile_HouseholderQR_householderQ</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_HouseholderQR_solve.vcxproj">
+      <Project>{FBF7C74F-9F87-3E89-8E60-3E220FA815D3}</Project>
+      <Name>compile_HouseholderQR_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_HouseholderSequence_HouseholderSequence.vcxproj">
+      <Project>{95D01AF3-D587-332F-8F90-6862379C45AF}</Project>
+      <Name>compile_HouseholderSequence_HouseholderSequence</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_IOFormat.vcxproj">
+      <Project>{3C0EE622-291F-3D93-8E28-551EC186BAF9}</Project>
+      <Name>compile_IOFormat</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_JacobiSVD_basic.vcxproj">
+      <Project>{90268629-550B-3371-AF9A-575FF7A8AFCF}</Project>
+      <Name>compile_JacobiSVD_basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Jacobi_makeGivens.vcxproj">
+      <Project>{C2BFB580-3F8C-3291-914E-3CD089514F43}</Project>
+      <Name>compile_Jacobi_makeGivens</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Jacobi_makeJacobi.vcxproj">
+      <Project>{6370BAE4-0E99-30EB-AD0B-A06184E89A94}</Project>
+      <Name>compile_Jacobi_makeJacobi</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_LLT_example.vcxproj">
+      <Project>{CE9AB4FA-2D34-3EB4-A17F-617266305BF7}</Project>
+      <Name>compile_LLT_example</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_LLT_solve.vcxproj">
+      <Project>{4BEFFD41-900F-3E7A-8749-A8590E4930AA}</Project>
+      <Name>compile_LLT_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_LeastSquaresNormalEquations.vcxproj">
+      <Project>{C2BF6D0E-A2C7-359E-B33D-5304BBDEEEAF}</Project>
+      <Name>compile_LeastSquaresNormalEquations</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_LeastSquaresQR.vcxproj">
+      <Project>{74960AD4-D6B7-3BCD-98D5-DAF0DF99C1ED}</Project>
+      <Name>compile_LeastSquaresQR</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Map_general_stride.vcxproj">
+      <Project>{BF062871-B349-33AA-ACBB-EF420881CC41}</Project>
+      <Name>compile_Map_general_stride</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Map_inner_stride.vcxproj">
+      <Project>{8CCFDD45-11F8-3BCB-AC60-2F8F34175EA7}</Project>
+      <Name>compile_Map_inner_stride</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Map_outer_stride.vcxproj">
+      <Project>{05EF7ADA-1CBB-335C-8455-AC3D7FA747CD}</Project>
+      <Name>compile_Map_outer_stride</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Map_placement_new.vcxproj">
+      <Project>{8A55AEC1-A168-3772-B04A-EE05889DFB71}</Project>
+      <Name>compile_Map_placement_new</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Map_simple.vcxproj">
+      <Project>{ADD6711B-B55D-362A-835A-5335CDFA9BC0}</Project>
+      <Name>compile_Map_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_adjoint.vcxproj">
+      <Project>{BA281D53-8394-35F3-B5FA-F1D37E778D3B}</Project>
+      <Name>compile_MatrixBase_adjoint</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_all.vcxproj">
+      <Project>{8DFB1FE0-6F1D-378F-99B4-4563AADF7562}</Project>
+      <Name>compile_MatrixBase_all</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_applyOnTheLeft.vcxproj">
+      <Project>{4AD2BD1D-3CF0-3E4E-9183-B86C7B84FF24}</Project>
+      <Name>compile_MatrixBase_applyOnTheLeft</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_applyOnTheRight.vcxproj">
+      <Project>{FD164265-1D20-38FE-90DE-C1A9BFB26EB1}</Project>
+      <Name>compile_MatrixBase_applyOnTheRight</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_array.vcxproj">
+      <Project>{844BE659-DD0E-349B-B1B5-4281C2BA73DC}</Project>
+      <Name>compile_MatrixBase_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_array_const.vcxproj">
+      <Project>{6E6126B6-B94D-379F-95DA-4B73BFD243E6}</Project>
+      <Name>compile_MatrixBase_array_const</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_asDiagonal.vcxproj">
+      <Project>{CA98974D-2F03-335B-8885-906297430D67}</Project>
+      <Name>compile_MatrixBase_asDiagonal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_block_int_int.vcxproj">
+      <Project>{A2B6C92F-61BF-39E3-BF02-6F1F3C1BA688}</Project>
+      <Name>compile_MatrixBase_block_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_block_int_int_int_int.vcxproj">
+      <Project>{542D5D92-B016-30D4-8CB4-2915321B69C5}</Project>
+      <Name>compile_MatrixBase_block_int_int_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_bottomLeftCorner_int_int.vcxproj">
+      <Project>{C372374C-4B1F-3557-B74B-54236EB6EEC0}</Project>
+      <Name>compile_MatrixBase_bottomLeftCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_bottomRightCorner_int_int.vcxproj">
+      <Project>{D6CC57B9-F3A4-3433-8EA0-6B788A3FC2D4}</Project>
+      <Name>compile_MatrixBase_bottomRightCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_bottomRows_int.vcxproj">
+      <Project>{7702C33B-4476-37E9-85B6-9D633DA460CA}</Project>
+      <Name>compile_MatrixBase_bottomRows_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_cast.vcxproj">
+      <Project>{2EDD33FC-CFD8-3F89-96D1-F1EB67F6424D}</Project>
+      <Name>compile_MatrixBase_cast</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_col.vcxproj">
+      <Project>{ED0AD0C1-57AE-3E8E-BF90-ACD902387A8A}</Project>
+      <Name>compile_MatrixBase_col</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_colwise.vcxproj">
+      <Project>{9BC95EE0-E845-3AA3-BEA5-55777DA5A6AD}</Project>
+      <Name>compile_MatrixBase_colwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_computeInverseAndDetWithCheck.vcxproj">
+      <Project>{0E7F34B5-12F6-3FF1-A9A4-60FF2176D0B9}</Project>
+      <Name>compile_MatrixBase_computeInverseAndDetWithCheck</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_computeInverseWithCheck.vcxproj">
+      <Project>{9D0DB962-F937-3AB8-9455-7CD2DCD24124}</Project>
+      <Name>compile_MatrixBase_computeInverseWithCheck</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_cwiseAbs.vcxproj">
+      <Project>{F7FBB4FE-5D27-3402-8A5E-8C4E6A3A9B9D}</Project>
+      <Name>compile_MatrixBase_cwiseAbs</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_cwiseAbs2.vcxproj">
+      <Project>{47E94AE5-BF38-373B-90F2-7CFFE40D6520}</Project>
+      <Name>compile_MatrixBase_cwiseAbs2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_cwiseEqual.vcxproj">
+      <Project>{BF442EB4-28B9-37B6-B57C-FFDAEDBD023E}</Project>
+      <Name>compile_MatrixBase_cwiseEqual</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_cwiseInverse.vcxproj">
+      <Project>{5F749B9F-B9DD-340E-B272-EDE617D41EF2}</Project>
+      <Name>compile_MatrixBase_cwiseInverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_cwiseMax.vcxproj">
+      <Project>{8C6383AA-60B3-3E7D-B258-5A89B0701C3D}</Project>
+      <Name>compile_MatrixBase_cwiseMax</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_cwiseMin.vcxproj">
+      <Project>{4DBD60A6-707C-361F-854E-A7B38FFA06A9}</Project>
+      <Name>compile_MatrixBase_cwiseMin</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_cwiseNotEqual.vcxproj">
+      <Project>{A4C1884A-2C50-3EFB-B87E-9A7B797F4C84}</Project>
+      <Name>compile_MatrixBase_cwiseNotEqual</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_cwiseProduct.vcxproj">
+      <Project>{95FB09EF-3869-34CB-86F8-FCAE54543CD1}</Project>
+      <Name>compile_MatrixBase_cwiseProduct</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_cwiseQuotient.vcxproj">
+      <Project>{F19BCAFF-3616-3B74-874D-A39C37EADBF4}</Project>
+      <Name>compile_MatrixBase_cwiseQuotient</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_cwiseSign.vcxproj">
+      <Project>{FE65E91E-8EA0-3B54-AFB6-CBA0D4F5321B}</Project>
+      <Name>compile_MatrixBase_cwiseSign</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_cwiseSqrt.vcxproj">
+      <Project>{008CA03B-DBB0-3E65-855E-5952FF4CE4E7}</Project>
+      <Name>compile_MatrixBase_cwiseSqrt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_diagonal.vcxproj">
+      <Project>{82AA310A-C8C8-32B2-AE46-759827C7883A}</Project>
+      <Name>compile_MatrixBase_diagonal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_diagonal_int.vcxproj">
+      <Project>{301D2CBD-996B-3093-AEB1-C2D6BD87EE75}</Project>
+      <Name>compile_MatrixBase_diagonal_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_diagonal_template_int.vcxproj">
+      <Project>{A9F3F609-F0A4-3DBF-9001-FE5B808DD605}</Project>
+      <Name>compile_MatrixBase_diagonal_template_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_eigenvalues.vcxproj">
+      <Project>{FF6DD2A5-9672-307C-956E-74D213676E34}</Project>
+      <Name>compile_MatrixBase_eigenvalues</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_end_int.vcxproj">
+      <Project>{E544F592-6D0A-3E57-A7BE-2D3EC59F9387}</Project>
+      <Name>compile_MatrixBase_end_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_eval.vcxproj">
+      <Project>{E0AEB346-AF64-3405-AA5F-85FD2DBD7DF4}</Project>
+      <Name>compile_MatrixBase_eval</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_fixedBlock_int_int.vcxproj">
+      <Project>{A70F12B7-2472-3B9B-8544-953FE8A66824}</Project>
+      <Name>compile_MatrixBase_fixedBlock_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_hnormalized.vcxproj">
+      <Project>{A83DC77C-67AE-32C7-BCC2-32A652451ECB}</Project>
+      <Name>compile_MatrixBase_hnormalized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_homogeneous.vcxproj">
+      <Project>{00712DCF-F761-31EC-8A08-CF6568EF8DE1}</Project>
+      <Name>compile_MatrixBase_homogeneous</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_identity.vcxproj">
+      <Project>{E07B4523-4027-3AF9-9C56-D3E2C2D0C27E}</Project>
+      <Name>compile_MatrixBase_identity</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_identity_int_int.vcxproj">
+      <Project>{ECF8F134-0412-3616-A921-D1963A4782CC}</Project>
+      <Name>compile_MatrixBase_identity_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_inverse.vcxproj">
+      <Project>{66091A74-CD8B-3EBB-BDC8-839C9B376947}</Project>
+      <Name>compile_MatrixBase_inverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_isDiagonal.vcxproj">
+      <Project>{29A9094C-025D-3590-AE04-5EF70016BD3E}</Project>
+      <Name>compile_MatrixBase_isDiagonal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_isIdentity.vcxproj">
+      <Project>{BB751968-8158-3AA3-B53E-A4FA2581F056}</Project>
+      <Name>compile_MatrixBase_isIdentity</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_isOnes.vcxproj">
+      <Project>{EBEED888-6997-31B2-9278-50EF9531B5D8}</Project>
+      <Name>compile_MatrixBase_isOnes</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_isOrthogonal.vcxproj">
+      <Project>{44374E93-19DE-35F9-9DD9-103C6360C2EB}</Project>
+      <Name>compile_MatrixBase_isOrthogonal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_isUnitary.vcxproj">
+      <Project>{FB518029-B2BC-3C34-A5BD-D96E713A559D}</Project>
+      <Name>compile_MatrixBase_isUnitary</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_isZero.vcxproj">
+      <Project>{6597B9C3-7825-376D-B2F0-6D05ABECF89D}</Project>
+      <Name>compile_MatrixBase_isZero</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_leftCols_int.vcxproj">
+      <Project>{E4EDFBA3-AAF5-3516-ACD8-56AB9782DBFC}</Project>
+      <Name>compile_MatrixBase_leftCols_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_noalias.vcxproj">
+      <Project>{B8AD4F15-6490-3DD5-B290-4F9695C33ACE}</Project>
+      <Name>compile_MatrixBase_noalias</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_ones.vcxproj">
+      <Project>{6E32BE98-650D-3C91-8382-3F2660BE7E98}</Project>
+      <Name>compile_MatrixBase_ones</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_ones_int.vcxproj">
+      <Project>{EEA878E5-49D1-31A7-96C2-2CA335946777}</Project>
+      <Name>compile_MatrixBase_ones_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_ones_int_int.vcxproj">
+      <Project>{8AE2A989-FA10-3269-8269-A85DA51C94B0}</Project>
+      <Name>compile_MatrixBase_ones_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_operatorNorm.vcxproj">
+      <Project>{D20F637A-85C9-3C3A-A6FB-EE73EDA17350}</Project>
+      <Name>compile_MatrixBase_operatorNorm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_prod.vcxproj">
+      <Project>{F06F6A5B-5749-3DF5-B430-99F125CB1345}</Project>
+      <Name>compile_MatrixBase_prod</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_random.vcxproj">
+      <Project>{0C86C52B-8FC8-3C7F-B3A8-928F02CC1EE0}</Project>
+      <Name>compile_MatrixBase_random</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_random_int.vcxproj">
+      <Project>{F3E7C5E2-7A64-3D2D-8ECC-A0B6E7A74C03}</Project>
+      <Name>compile_MatrixBase_random_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_random_int_int.vcxproj">
+      <Project>{F888B2B1-89F0-3801-B748-E8606558726A}</Project>
+      <Name>compile_MatrixBase_random_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_replicate.vcxproj">
+      <Project>{6C7C4D15-B131-3FF4-B260-9C86FD30641C}</Project>
+      <Name>compile_MatrixBase_replicate</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_replicate_int_int.vcxproj">
+      <Project>{F0FE1A1E-855E-3E87-B578-2AE0031A6D25}</Project>
+      <Name>compile_MatrixBase_replicate_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_reverse.vcxproj">
+      <Project>{1C00B8DE-9F4D-3DDC-93DE-9808AF804D1F}</Project>
+      <Name>compile_MatrixBase_reverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_rightCols_int.vcxproj">
+      <Project>{C4C5473F-7197-3BFA-977C-68955B22C6FD}</Project>
+      <Name>compile_MatrixBase_rightCols_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_row.vcxproj">
+      <Project>{B3C55218-446A-3AC2-A61C-12EC7B9F445C}</Project>
+      <Name>compile_MatrixBase_row</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_rowwise.vcxproj">
+      <Project>{5312F48D-BFCA-3B06-8915-6FBD111A35C7}</Project>
+      <Name>compile_MatrixBase_rowwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_segment_int_int.vcxproj">
+      <Project>{501AAA41-0996-3CD6-8ECF-2A771B377462}</Project>
+      <Name>compile_MatrixBase_segment_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_select.vcxproj">
+      <Project>{D6C0AADD-44E4-3D90-82E9-07D7FF26C56C}</Project>
+      <Name>compile_MatrixBase_select</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_selfadjointView.vcxproj">
+      <Project>{DF473816-97FD-306E-8B95-37ADFE3CE028}</Project>
+      <Name>compile_MatrixBase_selfadjointView</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_set.vcxproj">
+      <Project>{73058EE6-FFE8-3DF4-B783-49CB27B496DF}</Project>
+      <Name>compile_MatrixBase_set</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_setIdentity.vcxproj">
+      <Project>{1C0B890A-9C38-3CE5-8BF6-94520F9ABFC5}</Project>
+      <Name>compile_MatrixBase_setIdentity</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_setOnes.vcxproj">
+      <Project>{6237CE68-DC16-3C2D-A6E2-130F5D96B02C}</Project>
+      <Name>compile_MatrixBase_setOnes</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_setRandom.vcxproj">
+      <Project>{F4AB8F66-B456-3C20-A9AD-485308F04CA9}</Project>
+      <Name>compile_MatrixBase_setRandom</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_setZero.vcxproj">
+      <Project>{0572F808-A78B-3E31-AFB2-E9F5A7113B16}</Project>
+      <Name>compile_MatrixBase_setZero</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_start_int.vcxproj">
+      <Project>{4207FB0B-6F29-3A7F-8277-F0236F95FEBC}</Project>
+      <Name>compile_MatrixBase_start_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_template_int_bottomRows.vcxproj">
+      <Project>{2C236003-E571-3CD8-8754-4A775123A18B}</Project>
+      <Name>compile_MatrixBase_template_int_bottomRows</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_template_int_end.vcxproj">
+      <Project>{371BA405-081A-3FA1-8C1A-54F0A4DBA3F4}</Project>
+      <Name>compile_MatrixBase_template_int_end</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_template_int_int_block_int_int_int_int.vcxproj">
+      <Project>{B560B569-135F-37B6-A0C6-CCDF12F4F510}</Project>
+      <Name>compile_MatrixBase_template_int_int_block_int_int_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_template_int_int_bottomLeftCorner.vcxproj">
+      <Project>{A251B7D4-F997-34BA-8760-420253739D35}</Project>
+      <Name>compile_MatrixBase_template_int_int_bottomLeftCorner</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_template_int_int_bottomLeftCorner_int_int.vcxproj">
+      <Project>{0A9E8315-1F51-39EC-AECE-99E784AA1C5A}</Project>
+      <Name>compile_MatrixBase_template_int_int_bottomLeftCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_template_int_int_bottomRightCorner.vcxproj">
+      <Project>{0071C693-DA37-3E03-90F8-D56B47D03548}</Project>
+      <Name>compile_MatrixBase_template_int_int_bottomRightCorner</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_template_int_int_bottomRightCorner_int_int.vcxproj">
+      <Project>{53532757-66C9-3264-8DCD-B457B1B16A2F}</Project>
+      <Name>compile_MatrixBase_template_int_int_bottomRightCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_template_int_int_topLeftCorner.vcxproj">
+      <Project>{E9E39B8D-700F-3539-8291-0A432E69A91E}</Project>
+      <Name>compile_MatrixBase_template_int_int_topLeftCorner</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_template_int_int_topLeftCorner_int_int.vcxproj">
+      <Project>{3863B5B3-D436-344F-867C-2AB6D5A22DA5}</Project>
+      <Name>compile_MatrixBase_template_int_int_topLeftCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_template_int_int_topRightCorner.vcxproj">
+      <Project>{7697FEE2-B265-3841-91D1-810A33B8DE98}</Project>
+      <Name>compile_MatrixBase_template_int_int_topRightCorner</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_template_int_int_topRightCorner_int_int.vcxproj">
+      <Project>{68D66F2E-B7B0-3C8A-A6E7-F2AB5CEB3DD1}</Project>
+      <Name>compile_MatrixBase_template_int_int_topRightCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_template_int_leftCols.vcxproj">
+      <Project>{DFD28A94-94C4-3276-8186-425F50C9AAD1}</Project>
+      <Name>compile_MatrixBase_template_int_leftCols</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_template_int_rightCols.vcxproj">
+      <Project>{4CAFB53D-9227-3066-B24E-B0AEDE94E3B2}</Project>
+      <Name>compile_MatrixBase_template_int_rightCols</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_template_int_segment.vcxproj">
+      <Project>{00421C2C-8E3B-3121-B128-CB7363F00E61}</Project>
+      <Name>compile_MatrixBase_template_int_segment</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_template_int_start.vcxproj">
+      <Project>{9C27DE8B-94BF-3E0B-A130-D02C3C45DDB1}</Project>
+      <Name>compile_MatrixBase_template_int_start</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_template_int_topRows.vcxproj">
+      <Project>{32E19E4B-F118-33F1-9342-C7FCDFB703BA}</Project>
+      <Name>compile_MatrixBase_template_int_topRows</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_topLeftCorner_int_int.vcxproj">
+      <Project>{2AB2C186-3C9D-3366-B19B-648B3BB4B313}</Project>
+      <Name>compile_MatrixBase_topLeftCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_topRightCorner_int_int.vcxproj">
+      <Project>{CB0A628D-3F76-3795-8022-D5C63DBAD369}</Project>
+      <Name>compile_MatrixBase_topRightCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_topRows_int.vcxproj">
+      <Project>{71325168-FC79-3198-9913-46C2B10EC5C7}</Project>
+      <Name>compile_MatrixBase_topRows_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_transpose.vcxproj">
+      <Project>{879265A8-E710-32DE-B269-055CE35C61FA}</Project>
+      <Name>compile_MatrixBase_transpose</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_triangularView.vcxproj">
+      <Project>{5A8733B5-980C-385C-9213-F8BA8F8D531E}</Project>
+      <Name>compile_MatrixBase_triangularView</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_zero.vcxproj">
+      <Project>{5E980D43-9EB3-3F17-BF4C-951FBDEF4EE1}</Project>
+      <Name>compile_MatrixBase_zero</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_zero_int.vcxproj">
+      <Project>{1F7DE4E5-A1F7-3A5F-A249-11A57C6EEC25}</Project>
+      <Name>compile_MatrixBase_zero_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_MatrixBase_zero_int_int.vcxproj">
+      <Project>{634E9DBC-3684-33A2-AE15-447DA72BD1CB}</Project>
+      <Name>compile_MatrixBase_zero_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Matrix_Map_stride.vcxproj">
+      <Project>{815896E6-E408-32A2-90B0-ADA3F6A13E36}</Project>
+      <Name>compile_Matrix_Map_stride</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Matrix_resize_NoChange_int.vcxproj">
+      <Project>{EE9FA50E-F588-3A75-829D-9EA63CE3CA0C}</Project>
+      <Name>compile_Matrix_resize_NoChange_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Matrix_resize_int.vcxproj">
+      <Project>{48A93E40-A4B5-3C51-AF92-EA94ACD4481E}</Project>
+      <Name>compile_Matrix_resize_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Matrix_resize_int_NoChange.vcxproj">
+      <Project>{078B38ED-07FA-3D60-98FC-5E0C79552450}</Project>
+      <Name>compile_Matrix_resize_int_NoChange</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Matrix_resize_int_int.vcxproj">
+      <Project>{BAB8B998-0309-3389-92C0-254E92D0C71F}</Project>
+      <Name>compile_Matrix_resize_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Matrix_setConstant_int.vcxproj">
+      <Project>{8C5A3D4C-1F84-3DEF-8ABB-C99023935D70}</Project>
+      <Name>compile_Matrix_setConstant_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Matrix_setConstant_int_int.vcxproj">
+      <Project>{274A7B48-D640-3148-811F-BB8B87CCDF19}</Project>
+      <Name>compile_Matrix_setConstant_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Matrix_setIdentity_int_int.vcxproj">
+      <Project>{AAED87CE-23F2-35E4-A47F-77E4094EF907}</Project>
+      <Name>compile_Matrix_setIdentity_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Matrix_setOnes_int.vcxproj">
+      <Project>{EB56AEE8-75C3-3230-81BE-60852DD0E276}</Project>
+      <Name>compile_Matrix_setOnes_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Matrix_setOnes_int_int.vcxproj">
+      <Project>{B06F83FE-C2B9-36E0-A22B-DA49B6F1337D}</Project>
+      <Name>compile_Matrix_setOnes_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Matrix_setRandom_int.vcxproj">
+      <Project>{A9CF3135-BA49-365C-AE3C-DCF242974767}</Project>
+      <Name>compile_Matrix_setRandom_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Matrix_setRandom_int_int.vcxproj">
+      <Project>{41B82C69-0268-3803-9674-5C37CAAE049C}</Project>
+      <Name>compile_Matrix_setRandom_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Matrix_setZero_int.vcxproj">
+      <Project>{0EE6DB38-58BF-3C46-9E4C-B9186EDD5AFB}</Project>
+      <Name>compile_Matrix_setZero_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Matrix_setZero_int_int.vcxproj">
+      <Project>{80215953-C0FB-3725-A29A-E5A31AE2B1CC}</Project>
+      <Name>compile_Matrix_setZero_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_PartialPivLU_solve.vcxproj">
+      <Project>{5C04B003-0E96-30C0-A1D6-A5BDCADFC977}</Project>
+      <Name>compile_PartialPivLU_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_PartialRedux_count.vcxproj">
+      <Project>{6AA57BA3-26B9-37D9-B09C-DB9E5B2FE66A}</Project>
+      <Name>compile_PartialRedux_count</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_PartialRedux_maxCoeff.vcxproj">
+      <Project>{605F564E-4AC4-3ED2-B9BF-DC69A8B92C18}</Project>
+      <Name>compile_PartialRedux_maxCoeff</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_PartialRedux_minCoeff.vcxproj">
+      <Project>{12341812-F4F9-306E-AFFD-EEEA75AE3D5D}</Project>
+      <Name>compile_PartialRedux_minCoeff</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_PartialRedux_norm.vcxproj">
+      <Project>{B8C81B19-1F7B-3AC1-9364-CB702D9CB00D}</Project>
+      <Name>compile_PartialRedux_norm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_PartialRedux_prod.vcxproj">
+      <Project>{DFB819A5-350C-35B7-AF0B-1817C791174D}</Project>
+      <Name>compile_PartialRedux_prod</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_PartialRedux_squaredNorm.vcxproj">
+      <Project>{4FFA1C04-EEAD-3FB1-94ED-53264C7DF59D}</Project>
+      <Name>compile_PartialRedux_squaredNorm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_PartialRedux_sum.vcxproj">
+      <Project>{E476C9C7-CB88-3557-B007-BA47DA6F4208}</Project>
+      <Name>compile_PartialRedux_sum</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_RealQZ_compute.vcxproj">
+      <Project>{40D9513D-7C01-32E7-A408-7D54FE796723}</Project>
+      <Name>compile_RealQZ_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_RealSchur_RealSchur_MatrixType.vcxproj">
+      <Project>{247658AB-AC16-329F-B5F6-BA482C2875C5}</Project>
+      <Name>compile_RealSchur_RealSchur_MatrixType</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_RealSchur_compute.vcxproj">
+      <Project>{3091136B-0A27-3A5A-A491-62C039364204}</Project>
+      <Name>compile_RealSchur_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver.vcxproj">
+      <Project>{87C5AF60-5E6D-3A5C-B666-F7E10A569DB1}</Project>
+      <Name>compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver_MatrixType.vcxproj">
+      <Project>{3EAE6C1B-1B22-319B-8283-D18DAD5E5ECE}</Project>
+      <Name>compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver_MatrixType</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver_MatrixType2.vcxproj">
+      <Project>{5BE87687-1569-3155-BEDE-ED9A258530FF}</Project>
+      <Name>compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver_MatrixType2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_SelfAdjointEigenSolver_compute_MatrixType.vcxproj">
+      <Project>{D762E297-819D-3360-BB30-FFB859BD7656}</Project>
+      <Name>compile_SelfAdjointEigenSolver_compute_MatrixType</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_SelfAdjointEigenSolver_compute_MatrixType2.vcxproj">
+      <Project>{C402647D-0DC3-387E-A99E-1031583D7A44}</Project>
+      <Name>compile_SelfAdjointEigenSolver_compute_MatrixType2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_SelfAdjointEigenSolver_eigenvalues.vcxproj">
+      <Project>{7D61B928-7A2A-364A-9F90-614BD27E951F}</Project>
+      <Name>compile_SelfAdjointEigenSolver_eigenvalues</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_SelfAdjointEigenSolver_eigenvectors.vcxproj">
+      <Project>{09FF2704-A79B-3C1C-88F4-1EF3EEFCFB22}</Project>
+      <Name>compile_SelfAdjointEigenSolver_eigenvectors</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_SelfAdjointEigenSolver_operatorInverseSqrt.vcxproj">
+      <Project>{FF2AA8CD-B967-3558-B039-5593B2FC8C6D}</Project>
+      <Name>compile_SelfAdjointEigenSolver_operatorInverseSqrt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_SelfAdjointEigenSolver_operatorSqrt.vcxproj">
+      <Project>{A69ED795-0C01-3A54-828B-4BFFA014F7F8}</Project>
+      <Name>compile_SelfAdjointEigenSolver_operatorSqrt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_SelfAdjointView_eigenvalues.vcxproj">
+      <Project>{B71AC06E-539E-353C-B4CE-778757F883D0}</Project>
+      <Name>compile_SelfAdjointView_eigenvalues</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_SelfAdjointView_operatorNorm.vcxproj">
+      <Project>{C04563B0-8814-3F44-BA9A-7424EBC625C7}</Project>
+      <Name>compile_SelfAdjointView_operatorNorm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_SparseMatrix_coeffs.vcxproj">
+      <Project>{FEBE20A8-B220-3BCC-9395-F5449658BDA1}</Project>
+      <Name>compile_SparseMatrix_coeffs</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_TopicAliasing_block.vcxproj">
+      <Project>{4FE70173-99FF-31C5-B649-4E115F334588}</Project>
+      <Name>compile_TopicAliasing_block</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_TopicAliasing_block_correct.vcxproj">
+      <Project>{77ED547F-E451-33B6-90CF-EADBDAB4E9B4}</Project>
+      <Name>compile_TopicAliasing_block_correct</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_TopicAliasing_cwise.vcxproj">
+      <Project>{6A822CBE-DE6E-36AE-A401-CE4D9A854C11}</Project>
+      <Name>compile_TopicAliasing_cwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_TopicAliasing_mult1.vcxproj">
+      <Project>{D28862F8-41E7-3B7A-BBDF-D536931D1982}</Project>
+      <Name>compile_TopicAliasing_mult1</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_TopicAliasing_mult2.vcxproj">
+      <Project>{5AC5FE47-3ABA-33FF-87D7-D72CDBB7E0DE}</Project>
+      <Name>compile_TopicAliasing_mult2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_TopicAliasing_mult3.vcxproj">
+      <Project>{6C78945F-DCF2-3310-97FF-01EF12AA555E}</Project>
+      <Name>compile_TopicAliasing_mult3</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_TopicAliasing_mult4.vcxproj">
+      <Project>{AB2287DF-F3C8-3F9E-9C53-E7CF7A64B5E3}</Project>
+      <Name>compile_TopicAliasing_mult4</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_TopicAliasing_mult5.vcxproj">
+      <Project>{E5605FD8-9565-30AB-9351-7D67E3670958}</Project>
+      <Name>compile_TopicAliasing_mult5</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_TopicStorageOrders_example.vcxproj">
+      <Project>{FD08AB24-3A69-392B-AF43-C6743B6471DD}</Project>
+      <Name>compile_TopicStorageOrders_example</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Triangular_solve.vcxproj">
+      <Project>{E2F06DDA-FF03-33F2-A716-3DD357D9A465}</Project>
+      <Name>compile_Triangular_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tridiagonalization_Tridiagonalization_MatrixType.vcxproj">
+      <Project>{3708FF1A-42AB-326F-85D8-442B272B8727}</Project>
+      <Name>compile_Tridiagonalization_Tridiagonalization_MatrixType</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tridiagonalization_compute.vcxproj">
+      <Project>{DFD80FB5-C055-386F-9FD1-E6580C309A59}</Project>
+      <Name>compile_Tridiagonalization_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tridiagonalization_decomposeInPlace.vcxproj">
+      <Project>{30D556B0-AAA4-3D95-BA51-1040B0A73CCD}</Project>
+      <Name>compile_Tridiagonalization_decomposeInPlace</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tridiagonalization_diagonal.vcxproj">
+      <Project>{5C4C2518-ACA4-339A-A53D-AE9C5E9225CA}</Project>
+      <Name>compile_Tridiagonalization_diagonal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tridiagonalization_householderCoefficients.vcxproj">
+      <Project>{A57339D0-6B49-36FA-8FFA-D24C4509A342}</Project>
+      <Name>compile_Tridiagonalization_householderCoefficients</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tridiagonalization_packedMatrix.vcxproj">
+      <Project>{25B64928-F33E-32E6-AC43-5AD1FD7FCFD1}</Project>
+      <Name>compile_Tridiagonalization_packedMatrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_AdvancedInitialization_Block.vcxproj">
+      <Project>{45A3532B-5F71-3C7C-8D92-2D50193A8BDD}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_Block</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_AdvancedInitialization_CommaTemporary.vcxproj">
+      <Project>{AD27C9D3-F695-39B8-9173-DC75999449EC}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_CommaTemporary</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_AdvancedInitialization_Join.vcxproj">
+      <Project>{51273234-A8C7-30AE-9844-9F4414FA0136}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_Join</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_AdvancedInitialization_LinSpaced.vcxproj">
+      <Project>{1EB8EFAD-7E15-3287-8A00-3191DF94C4AD}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_LinSpaced</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_AdvancedInitialization_ThreeWays.vcxproj">
+      <Project>{06448DE4-E83C-3AB5-A3DF-8C768529EF26}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_ThreeWays</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_AdvancedInitialization_Zero.vcxproj">
+      <Project>{B6B2141B-3592-3F9E-B174-2F1C98A37BDD}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_Zero</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_Map_rowmajor.vcxproj">
+      <Project>{87F2665A-5CE0-33AF-B10A-C0199F0CDECD}</Project>
+      <Name>compile_Tutorial_Map_rowmajor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_Map_using.vcxproj">
+      <Project>{A45E3A86-90A9-3235-8352-0C484BB4A8A5}</Project>
+      <Name>compile_Tutorial_Map_using</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_ReshapeMat2Mat.vcxproj">
+      <Project>{6DDD4A77-5CBA-3350-800A-22216E4EFD5D}</Project>
+      <Name>compile_Tutorial_ReshapeMat2Mat</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_ReshapeMat2Vec.vcxproj">
+      <Project>{A57CD6CF-09FB-3780-8C54-DB240D943CC9}</Project>
+      <Name>compile_Tutorial_ReshapeMat2Vec</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_SlicingCol.vcxproj">
+      <Project>{D09CE6BC-F88F-3199-A3CF-B94C37B9D982}</Project>
+      <Name>compile_Tutorial_SlicingCol</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_SlicingVec.vcxproj">
+      <Project>{1A0F7014-A5BB-390A-B701-852B4B0EEA01}</Project>
+      <Name>compile_Tutorial_SlicingVec</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_commainit_01.vcxproj">
+      <Project>{4130E88B-B9E5-3605-8C96-5A1831389FA2}</Project>
+      <Name>compile_Tutorial_commainit_01</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_commainit_01b.vcxproj">
+      <Project>{7DF49EFD-3283-37B3-9C11-C5DC22E9BD62}</Project>
+      <Name>compile_Tutorial_commainit_01b</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_commainit_02.vcxproj">
+      <Project>{F55FA7B9-DD5E-37C8-A8C4-DDA918645524}</Project>
+      <Name>compile_Tutorial_commainit_02</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_solve_matrix_inverse.vcxproj">
+      <Project>{795E199C-46C0-33C5-8895-02BB352D0225}</Project>
+      <Name>compile_Tutorial_solve_matrix_inverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_solve_multiple_rhs.vcxproj">
+      <Project>{B0460583-408B-3CA7-8D5B-8A1BE6DC7F19}</Project>
+      <Name>compile_Tutorial_solve_multiple_rhs</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_solve_reuse_decomposition.vcxproj">
+      <Project>{2AA0722B-5BDD-324F-8EAA-00048E187659}</Project>
+      <Name>compile_Tutorial_solve_reuse_decomposition</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_solve_singular.vcxproj">
+      <Project>{3D4DC035-E4B9-35DD-941F-D4A7F92A79FA}</Project>
+      <Name>compile_Tutorial_solve_singular</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_solve_triangular.vcxproj">
+      <Project>{5FFD4CC0-7578-391F-B978-9543130B3B13}</Project>
+      <Name>compile_Tutorial_solve_triangular</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Tutorial_solve_triangular_inplace.vcxproj">
+      <Project>{065D5FA9-C654-3E18-889A-9C10FC0A767E}</Project>
+      <Name>compile_Tutorial_solve_triangular_inplace</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_VectorwiseOp_homogeneous.vcxproj">
+      <Project>{08D32BF4-9DD0-3E9B-B9A1-2839A1CC0DC2}</Project>
+      <Name>compile_VectorwiseOp_homogeneous</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_Vectorwise_reverse.vcxproj">
+      <Project>{375EC788-7E63-3632-9BAF-DD285118C393}</Project>
+      <Name>compile_Vectorwise_reverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_class_FullPivLU.vcxproj">
+      <Project>{54730707-4429-37BC-96D3-2CD6C558262F}</Project>
+      <Name>compile_class_FullPivLU</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_tut_arithmetic_redux_minmax.vcxproj">
+      <Project>{B043665C-3A6A-3A59-B53B-8B7A1D73D843}</Project>
+      <Name>compile_tut_arithmetic_redux_minmax</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_tut_arithmetic_transpose_aliasing.vcxproj">
+      <Project>{19386E06-6953-333E-8C08-4D30836E6F57}</Project>
+      <Name>compile_tut_arithmetic_transpose_aliasing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_tut_arithmetic_transpose_conjugate.vcxproj">
+      <Project>{4DA03879-FA79-3046-B001-3D283EDF0BC6}</Project>
+      <Name>compile_tut_arithmetic_transpose_conjugate</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_tut_arithmetic_transpose_inplace.vcxproj">
+      <Project>{B39C9E45-C0E0-3A40-9795-063EC803D0FD}</Project>
+      <Name>compile_tut_arithmetic_transpose_inplace</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\snippets\compile_tut_matrix_assignment_resizing.vcxproj">
+      <Project>{88CA1C25-4981-3543-AA05-C43F374F8A1D}</Project>
+      <Name>compile_tut_matrix_assignment_resizing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\doc.vcxproj">
+      <Project>{553877E8-1AB5-3D5E-8357-B3473B3605AE}</Project>
+      <Name>doc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\doc-eigen-prerequisites.vcxproj">
+      <Project>{662E1603-5D69-33E8-B2B7-C774F230AC88}</Project>
+      <Name>doc-eigen-prerequisites</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\doc-unsupported-prerequisites.vcxproj">
+      <Project>{C77A9814-9C42-32F4-9DEB-B8EAD3D56E10}</Project>
+      <Name>doc-unsupported-prerequisites</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\function_taking_eigenbase.vcxproj">
+      <Project>{2752493B-6A57-33F9-92A8-BE2D0DC4A811}</Project>
+      <Name>function_taking_eigenbase</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\function_taking_ref.vcxproj">
+      <Project>{FC9F31D4-B5CD-3302-A31B-DF8926D18012}</Project>
+      <Name>function_taking_ref</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\make_circulant.vcxproj">
+      <Project>{9CC8EA4E-1554-3AE4-A713-736A68879FE7}</Project>
+      <Name>make_circulant</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\make_circulant2.vcxproj">
+      <Project>{16CF0947-6D47-30BA-8247-52C9E1F2CE20}</Project>
+      <Name>make_circulant2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\matrixfree_cg.vcxproj">
+      <Project>{96BFA427-9CCC-3480-B0F8-E65BB326AF29}</Project>
+      <Name>matrixfree_cg</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\nullary_indexing.vcxproj">
+      <Project>{7579F999-6080-3F26-BA1D-1AA1D39E4C49}</Project>
+      <Name>nullary_indexing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\tut_arithmetic_add_sub.vcxproj">
+      <Project>{BFC968A0-021C-3A04-9D08-16CE974C2205}</Project>
+      <Name>tut_arithmetic_add_sub</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\tut_arithmetic_dot_cross.vcxproj">
+      <Project>{CC397538-9FD8-34E1-9643-7E293D100D03}</Project>
+      <Name>tut_arithmetic_dot_cross</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\tut_arithmetic_matrix_mul.vcxproj">
+      <Project>{5129FC1B-F25E-3659-BD96-005ABF728335}</Project>
+      <Name>tut_arithmetic_matrix_mul</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\tut_arithmetic_redux_basic.vcxproj">
+      <Project>{44ACFF39-269F-33A0-AC00-941C231E1DC6}</Project>
+      <Name>tut_arithmetic_redux_basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\tut_arithmetic_scalar_mul_div.vcxproj">
+      <Project>{4C4979F3-4D38-3F8C-9A20-0B1FC9E73D75}</Project>
+      <Name>tut_arithmetic_scalar_mul_div</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\tut_matrix_coefficient_accessors.vcxproj">
+      <Project>{8BE67632-D139-3849-BDEF-28E39D3F260E}</Project>
+      <Name>tut_matrix_coefficient_accessors</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\tut_matrix_resize.vcxproj">
+      <Project>{63970192-73D6-328B-86E5-2BC1A2E65ADE}</Project>
+      <Name>tut_matrix_resize</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Mindspore\mindspore-master\build\_deps\eigen3-src\_build\doc\examples\tut_matrix_resize_fixed_size.vcxproj">
+      <Project>{69CF051E-ABA0-3A03-B036-0EF56818BB41}</Project>
+      <Name>tut_matrix_resize_fixed_size</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

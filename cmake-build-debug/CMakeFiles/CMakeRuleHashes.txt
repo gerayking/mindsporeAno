@@ -1,0 +1,8 @@
+# Hashes of file build rules.
+198500c3299c076506c6994314772f09 proto/anf_ir.pb.cc
+d2d77a024f9b5b3303e230a469f5e3db proto/checkpoint.pb.cc
+d1d62dff5f70ae8bda6a222904ca0b76 proto/lineage.pb.cc
+cf3e8ae207fb5b79e82248c8bea594de proto/node_strategy.pb.cc
+8bc22ad0e83d25bbeca4807f96cf5807 proto/onnx.pb.cc
+b0f60c47c09d4fe254e0a2ca404ee5e2 proto/print.pb.cc
+643490da135c6d48401689ac0e5833f3 proto/summary.pb.cc
